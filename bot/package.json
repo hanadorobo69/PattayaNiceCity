@@ -1,0 +1,14 @@
+{
+  "name": "pvc-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram voice bot for Pattaya Vice City dev",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "openai": "^4.77.0"
+  }
+}

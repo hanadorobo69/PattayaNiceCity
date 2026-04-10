@@ -1,12 +1,680 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+/* Leaflet CSS AFTER Tailwind so it overrides preflight resets */
+@import "leaflet/dist/leaflet.css";
+@import "leaflet.markercluster/dist/MarkerCluster.css";
+
+/* Fix Tailwind preflight breaking Leaflet tiles (img { max-width:100%; height:auto }) */
+.leaflet-container img {
+  max-width: none !important;
+  max-height: none !important;
+  height: unset !important;
+}
+.leaflet-container {
+  background: #1a1510 !important;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Override default markercluster styles - we use custom iconCreateFunction */
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+  background: transparent !important;
+}
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+  background: transparent !important;
+}
+
+
+/* Allow custom pull-to-refresh on mobile */
+
+/* ─────────────────────────────────────────
+   NICE DARK — Variables CSS directes (hex/rgba)
+   exactement comme défini dans le prompt Vercel
+───────────────────────────────────────── */
+:root {
+  /* Fond sombre brun chaud */
+  --background: #1a1510;
+  --foreground: #ededed;
+
+  /* Cartes avec transparence glass */
+  --card: rgba(36, 28, 20, 0.85);
+  --card-foreground: #ededed;
+
+  /* Popovers / modals */
+  --popover: rgba(36, 28, 20, 0.95);
+  --popover-foreground: #ededed;
+
+  /* Gold = couleur principale */
+  --primary: #e8a840;
+  --primary-foreground: #ffffff;
+
+  /* Coral secondaire */
+  --secondary: rgba(224, 120, 80, 0.3);
+  --secondary-foreground: #edcbb0;
+
+  /* Tons atténués */
+  --muted: rgba(80, 60, 40, 0.4);
+  --muted-foreground: #a89880;
+
+  /* Mint accent */
+  --accent: #3db8a0;
+  --accent-foreground: #1a1510;
+
+  /* Erreurs / destructif */
+  --destructive: #ff4757;
+  --destructive-foreground: #ffffff;
+
+  /* Bordures et inputs */
+  --border: rgba(232, 168, 64, 0.2);
+  --input: rgba(80, 60, 40, 0.5);
+  --ring: #e8a840;
+
+  /* Border radius */
+  --radius: 0.75rem;
+
+  /* Category panel */
+  --category-panel-bg: linear-gradient(180deg, rgba(26,21,16,0.98) 0%, rgba(36,28,20,0.98) 100%);
+  --category-panel-border: rgba(232,168,64,0.20);
+  --category-panel-text: rgba(237,237,237,0.85);
+
+  /* Couleurs NiceCity custom */
+  --neon-pink: #e8a840;
+  --neon-cyan: #3db8a0;
+  --neon-orange: #e07850;
+  --neon-purple: #e07850;
+  --neon-green: #3db8a0;
+}
+
+/* ========================================
+   THEME VARIANT: NICE DAY (Clair, néons adaptés)
+   ======================================== */
+[data-theme="nicecity-light"] {
+  --background: #f5f0e8;
+  --foreground: #1a1510;
+  --card: rgba(255, 255, 255, 0.90);
+  --card-foreground: #1a1510;
+  --popover: rgba(255, 255, 255, 0.98);
+  --popover-foreground: #1a1510;
+  /* Rose foncé = lisible sur fond clair */
+  --primary: #b8860b;
+  --primary-foreground: #ffffff;
+  --secondary: rgba(224, 120, 80, 0.12);
+  --secondary-foreground: #8a6030;
+  --muted: rgba(224, 120, 80, 0.08);
+  --muted-foreground: #7a5a40;
+  --accent: #2a9080;
+  --accent-foreground: #ffffff;
+  --destructive: #cc2233;
+  --destructive-foreground: #ffffff;
+  --border: rgba(184, 134, 11, 0.20);
+  --input: rgba(224, 120, 80, 0.10);
+  --ring: #b8860b;
+  --neon-pink: #b8860b;
+  --neon-cyan: #2a9080;
+  --neon-orange: #c07000;
+  --neon-purple: #c06040;
+
+  /* Category panel */
+  --category-panel-bg: linear-gradient(180deg, rgba(248,244,235,0.99) 0%, rgba(240,232,218,0.99) 100%);
+  --category-panel-border: rgba(184,134,11,0.20);
+  --category-panel-text: #1a1510;
+}
+
+/* ========================================
+   THEME VARIANT: NEON CONTRAST (Sombre & lisible)
+   ======================================== */
+[data-theme="neon-contrast"] {
+  --background: #0a0a12;
+  --foreground: #ffffff;
+  --card: rgba(20, 20, 35, 0.95);
+  --card-foreground: #ffffff;
+  --popover: rgba(20, 20, 35, 0.98);
+  --popover-foreground: #ffffff;
+  --primary: #3db8a0;
+  --primary-foreground: #0a0a12;
+  --secondary: rgba(61, 184, 160, 0.15);
+  --secondary-foreground: #3db8a0;
+  --muted: rgba(255, 255, 255, 0.08);
+  --muted-foreground: rgba(255, 255, 255, 0.7);
+  --accent: #e8a840;
+  --accent-foreground: #ffffff;
+  --destructive: #ff4757;
+  --destructive-foreground: #ffffff;
+  --border: rgba(61, 184, 160, 0.2);
+  --input: rgba(255, 255, 255, 0.1);
+  --ring: #3db8a0;
+  --neon-pink: #e8a840;
+  --neon-cyan: #3db8a0;
+  --neon-orange: #ffab40;
+  --neon-purple: #e07850;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
+  }
+  ::selection {
+    background-color: rgba(232, 168, 64, 0.2);
+    color: var(--foreground);
+  }
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: rgba(26, 21, 16, 0.5); }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #e8a840, #e07850);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #f0c060, #e89070);
+  }
+}
+
+.scrollbar-thin::-webkit-scrollbar { width: 4px; }
+.scrollbar-thin { scrollbar-width: thin; }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Sunset Glow scrollbar */
+[data-theme="nicecity-light"] ::-webkit-scrollbar-track { background: rgba(244, 238, 228, 0.8); }
+[data-theme="nicecity-light"] ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #b8860b, #c06040); }
+
+/* ── Day mode: SunsetBackground ── */
+[data-theme="nicecity-light"] .night-base { display: none; }
+[data-theme="nicecity-light"] .neon-scanlines  { display: none; }
+[data-theme="nicecity-light"] .skyline    { display: none; }
+[data-theme="nicecity-light"] .neon-orb { mix-blend-mode: multiply; }
+[data-theme="nicecity-light"] .neon-orb-pink   { opacity: 0.20; }
+[data-theme="nicecity-light"] .neon-orb-cyan   { opacity: 0.15; }
+[data-theme="nicecity-light"] .neon-orb-purple { opacity: 0.12; }
+[data-theme="nicecity-light"] .neon-orb-orange { opacity: 0.10; }
+
+/* ── Day mode: light text overrides for posts/community ── */
+[data-theme="nicecity-light"] .post-text {
+  color: rgba(30, 25, 18, 0.88) !important;
+}
+
+/* ── Day mode: Header ── */
+[data-theme="nicecity-light"] .header-bg {
+  background: rgba(248, 244, 235, 0.94) !important;
+  box-shadow: 0 0 16px rgba(184, 134, 11, 0.08), 0 1px 0 rgba(184, 134, 11, 0.15) !important;
+}
+
+/* ── Day mode: Mobile sticky filter bar ── */
+[data-theme="nicecity-light"] .sticky-bar {
+  background: #f5f0e8 !important;
+  border-color: rgba(184, 134, 11, 0.18) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ── Day mode: Mobile nav ── */
+[data-theme="nicecity-light"] .mobile-nav-bg {
+  background: rgba(248, 244, 235, 0.97) !important;
+}
+
+/* ── Day mode: Mobile logo menu panel ── */
+[data-theme="nicecity-light"] .logo-menu-panel {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(184, 134, 11, 0.18) !important;
+}
+
+/* ── Day mode: Search input ── */
+[data-theme="nicecity-light"] .search-input {
+  background: rgba(255,255,255,0.92) !important;
+  border-color: rgba(184,134,11,0.25) !important;
+  color: #1a1510 !important;
+}
+[data-theme="nicecity-light"] .search-input::placeholder { color: rgba(36,28,20,0.45) !important; }
+[data-theme="nicecity-light"] .search-history {
+  background: rgba(248,244,235,0.99) !important;
+  border-color: rgba(184,134,11,0.20) !important;
+}
+[data-theme="nicecity-light"] .search-history button { color: #1a1510 !important; }
+
+/* ── Day mode: Category panel ── */
+[data-theme="nicecity-light"] .category-panel {
+  background: linear-gradient(180deg, rgba(248,244,235,0.99) 0%, rgba(240,232,218,0.99) 100%) !important;
+  border-right-color: rgba(184,134,11,0.20) !important;
+  box-shadow: 4px 0 30px rgba(184,134,11,0.08) !important;
+}
+[data-theme="nicecity-light"] .category-panel .border-b { border-color: rgba(184,134,11,0.15) !important; }
+[data-theme="nicecity-light"] .cat-inactive {
+  color: rgba(36,28,20,0.65) !important;
+}
+[data-theme="nicecity-light"] .cat-inactive:hover {
+  background: rgba(184,134,11,0.08) !important;
+  color: #b8860b !important;
+}
+[data-theme="nicecity-light"] .cat-active {
+  background: linear-gradient(to right, #b8860b, #c06040) !important;
+  box-shadow: 0 0 14px rgba(184,134,11,0.30) !important;
+}
+
+/* ── Day mode: Spots sidebar active category ── */
+[data-theme="nicecity-light"] .sidebar-active {
+  color: #1a1510 !important;
+  background-color: rgba(184,134,11,0.12) !important;
+  border-left-color: #b8860b !important;
+  box-shadow: 0 0 10px rgba(184,134,11,0.12) !important;
+}
+
+/* ── Day mode: Header texts ── */
+[data-theme="nicecity-light"] header .text-\[\#e8a840\] { color: #b8860b !important; }
+[data-theme="nicecity-light"] header .hover\:text-\[\#3db8a0\]:hover { color: #2a9080 !important; }
+[data-theme="nicecity-light"] header .hover\:text-\[\#e8a840\]:hover { color: #b8860b !important; }
+
+/* ── Day mode: Footer ── */
+[data-theme="nicecity-light"] .site-footer {
+  border-color: rgba(184,134,11,0.28) !important;
+}
+
+/* ── Day mode: glass cards ── */
+[data-theme="nicecity-light"] .glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(184, 134, 11, 0.15);
+  box-shadow: 0 2px 16px rgba(224, 120, 80, 0.07);
+}
+
+/* ── Day mode: background image ── */
+[data-theme="nicecity-light"] #bg-white-theme { display: block !important; }
+
+/* ── Day mode: hardcoded neon pink → rose foncé lisible ── */
+[data-theme="nicecity-light"] .text-\[\#e8a840\] { color: #b8860b !important; }
+[data-theme="nicecity-light"] .hover\:text-\[\#e8a840\]:hover { color: #b8860b !important; }
+[data-theme="nicecity-light"] .text-\[\#3db8a0\] { color: #2a9080 !important; }
+[data-theme="nicecity-light"] .text-\[\#3db8a0\]\/70 { color: rgba(61,184,160,0.7) !important; }
+[data-theme="nicecity-light"] .border-\[\#e8a840\] { border-color: #b8860b !important; }
+
+/* Neon Contrast scrollbar */
+[data-theme="neon-contrast"] ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #3db8a0, #e8a840); }
+
+/* ─────────────────────────────────────────
+   CLASSES UTILITAIRES NICE CITY
+───────────────────────────────────────── */
+
+/* Effet glow rose neon sur le texte */
+.neon-glow {
+  text-shadow:
+    0 0 5px var(--neon-pink),
+    0 0 10px var(--neon-pink),
+    0 0 20px var(--neon-pink),
+    0 0 40px var(--neon-pink);
+}
+
+/* Effet glow cyan */
+.neon-glow-cyan {
+  text-shadow:
+    0 0 5px var(--neon-cyan),
+    0 0 10px var(--neon-cyan),
+    0 0 20px var(--neon-cyan);
+}
+
+/* Bordure avec glow neon */
+.neon-border {
+  box-shadow:
+    0 0 5px var(--neon-pink),
+    0 0 10px var(--neon-pink),
+    inset 0 0 5px rgba(232, 168, 64, 0.1);
+}
+
+/* Carte avec effet glass morphism */
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(36, 28, 20, 0.9) 0%,
+    rgba(26, 21, 16, 0.8) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 168, 64, 0.2);
+}
+[data-theme="nicecity-light"] .glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(232, 168, 64, 0.15);
+  box-shadow: 0 2px 16px rgba(224, 120, 80, 0.07);
+}
+[data-theme="neon-contrast"] .glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(25, 25, 45, 0.98) 0%,
+    rgba(15, 15, 30, 0.95) 100%
+  );
+  border: 1px solid rgba(61, 184, 160, 0.25);
+  box-shadow:
+    0 0 20px rgba(61, 184, 160, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Background principal — la couleur respire en sync avec les orbes */
+.site-bg {
+  background: #1a1510;
+  animation: bgBreathe 12s ease-in-out infinite;
+}
+
+@keyframes bgBreathe {
+  0%   { background-color: #1a1510; }
+  25%  { background-color: #1e1812; }
+  50%  { background-color: #1c1610; }
+  75%  { background-color: #201a14; }
+  100% { background-color: #1a1510; }
+}
+[data-theme="nicecity-light"] .site-bg {
+  animation: bgBreatheLight 12s ease-in-out infinite;
+}
+@keyframes bgBreatheLight {
+  0%   { background-color: #f5f0e8; }
+  25%  { background-color: #ebe3ff; }
+  50%  { background-color: #e8f4ff; }
+  75%  { background-color: #ffe8f4; }
+  100% { background-color: #f5f0e8; }
+}
+[data-theme="neon-contrast"] .site-bg {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(61, 184, 160, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(232, 168, 64, 0.08) 0%, transparent 40%),
+    radial-gradient(ellipse at 10% 80%, rgba(224, 120, 80, 0.06) 0%, transparent 40%),
+    linear-gradient(180deg, #0a0a12 0%, #0f0f1a 50%, #0a0a12 100%);
+}
+
+/* Horizontal scanline grid */
+.grid-lines {
+  background-image: linear-gradient(rgba(232, 168, 64, 0.05) 1px, transparent 1px);
+  background-size: 100% 40px;
+}
+
+/* Hover effect sur les cartes — renommé card-hover comme dans le prompt */
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 10px 40px rgba(232, 168, 64, 0.2),
+    0 0 0 1px rgba(232, 168, 64, 0.3);
+}
+/* venue-card = alias de card-hover */
+.venue-card {
+  transition: all 0.3s ease;
+}
+.venue-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 10px 40px rgba(232, 168, 64, 0.2),
+    0 0 0 1px rgba(232, 168, 64, 0.3);
+}
+
+/* Category pill hover */
+.category-pill {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-pill:hover {
+  box-shadow: 0 0 15px rgba(232, 168, 64, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Boutons avec style neon */
+.btn-neon {
+  background: linear-gradient(135deg, #e8a840, #e07850);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+.btn-neon:hover {
+  box-shadow: 0 0 20px rgba(232, 168, 64, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #e8a840, #e07850, #3db8a0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-theme="nicecity-light"] .gradient-text {
+  background: linear-gradient(to right, #e8a840, #ff6b35, #e07850);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Theme-specific neon glow overrides */
+[data-theme="nicecity-light"] .neon-glow {
+  text-shadow: 0 0 8px rgba(184,134,11,0.45), 0 0 18px rgba(184,134,11,0.28);
+}
+[data-theme="nicecity-light"] .neon-glow-cyan {
+  text-shadow: 0 0 8px rgba(61,184,160,0.45), 0 0 18px rgba(61,184,160,0.28);
+}
+[data-theme="neon-contrast"] .neon-glow {
+  text-shadow:
+    0 0 5px #3db8a0,
+    0 0 10px #3db8a0,
+    0 0 20px #3db8a0,
+    0 0 40px rgba(61, 184, 160, 0.5);
+}
+[data-theme="neon-contrast"] .neon-glow-cyan {
+  text-shadow:
+    0 0 5px #e8a840,
+    0 0 10px #e8a840,
+    0 0 20px rgba(232, 168, 64, 0.5);
+}
+
+/* Theme-specific venue card hover */
+[data-theme="nicecity-light"] .venue-card:hover {
+  box-shadow:
+    0 15px 40px rgba(232, 168, 64, 0.15),
+    0 0 0 1px rgba(232, 168, 64, 0.2);
+}
+[data-theme="neon-contrast"] .venue-card:hover {
+  box-shadow:
+    0 10px 40px rgba(61, 184, 160, 0.2),
+    0 0 0 1px rgba(61, 184, 160, 0.4);
+}
+
+/* High contrast text utilities */
+[data-theme="neon-contrast"] .text-readable {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+[data-theme="nicecity-light"] .text-readable {
+  color: #2a1f14;
+}
+
+/* Sunset gradient */
+.sunset-gradient {
+  background: linear-gradient(180deg, #ff6b35 0%, #e07850 40%, #b8860b 70%, #1a1510 100%);
+}
+
+/* Satine utilities (compat) */
+.satine-card {
+  background: linear-gradient(135deg, rgba(26,21,16,0.95) 0%, rgba(36,28,20,0.9) 100%);
+  border: 1px solid rgba(232, 168, 64, 0.1);
+}
+.satine-border {
+  border-color: rgba(232, 168, 64, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(232, 168, 64, 0.04);
+}
+.glow-primary {
+  box-shadow: 0 0 24px rgba(232, 168, 64, 0.22), 0 0 70px rgba(232, 168, 64, 0.06);
+}
+.glow-sm {
+  box-shadow: 0 0 12px rgba(232, 168, 64, 0.18);
+}
+
+/* ── About page: neon utilities (from pattaya-vibes-guide) ── */
+.neon-text-cyan {
+  color: #3db8a0;
+  text-shadow: 0 0 7px rgba(61,184,160,0.8), 0 0 20px rgba(61,184,160,0.4), 0 0 40px rgba(61,184,160,0.2);
+}
+.neon-text-pink {
+  color: #e8a840;
+  text-shadow: 0 0 7px rgba(232,168,64,0.8), 0 0 20px rgba(232,168,64,0.4);
+}
+.neon-border-cyan-box {
+  border: 1.5px solid rgba(61,184,160,0.6);
+  box-shadow: 0 0 12px rgba(61,184,160,0.2), inset 0 0 12px rgba(61,184,160,0.05);
+}
+.tier-row-purple  { border-left: 3px solid #e07850; box-shadow: -4px 0 12px rgba(224,120,80,0.35); }
+.tier-row-cyan    { border-left: 3px solid #3db8a0; box-shadow: -4px 0 12px rgba(61,184,160,0.35); }
+.tier-row-gold    { border-left: 3px solid #ffd700; box-shadow: -4px 0 12px rgba(255,215,0,0.35); }
+.tier-row-magenta { border-left: 3px solid #e8a840; box-shadow: -4px 0 12px rgba(255,26,140,0.35); }
+.tier-row-pink    { border-left: 3px solid #e8a840; box-shadow: -4px 0 12px rgba(232,168,64,0.35); }
+.tier-row-orange  { border-left: 3px solid #ffd700; box-shadow: -4px 0 12px rgba(255,215,0,0.35); }
+
+/* Navigation progress bar animation */
+@keyframes nav-progress {
+  0%   { width: 0%; opacity: 1; }
+  50%  { width: 70%; opacity: 1; }
+  90%  { width: 95%; opacity: 0.8; }
+  100% { width: 100%; opacity: 0; }
+}
+
+/* ─────────────────────────────────────────
+   BREATHING NEON ORBS — vraie respiration
+   scale 0.3 → 2.0, opacité 0.04 → 0.55
+───────────────────────────────────────── */
+
+/* Rose — inspire fort (gonfle au max) */
+@keyframes breathePink {
+  0%   { transform: scale(0.35); opacity: 0.05; }
+  50%  { transform: scale(2.0);  opacity: 0.50; }
+  100% { transform: scale(0.35); opacity: 0.05; }
+}
+
+/* Cyan — décalé d'une demi-phase */
+@keyframes breatheCyan {
+  0%   { transform: scale(1.8);  opacity: 0.40; }
+  50%  { transform: scale(0.30); opacity: 0.04; }
+  100% { transform: scale(1.8);  opacity: 0.40; }
+}
+
+/* Violet — rythme légèrement différent */
+@keyframes breathePurple {
+  0%   { transform: scale(0.5);  opacity: 0.06; }
+  40%  { transform: scale(1.6);  opacity: 0.35; }
+  100% { transform: scale(0.5);  opacity: 0.06; }
+}
+
+/* Orange — accent rapide */
+@keyframes breatheOrange {
+  0%   { transform: scale(1.4);  opacity: 0.30; }
+  50%  { transform: scale(0.4);  opacity: 0.05; }
+  100% { transform: scale(1.4);  opacity: 0.30; }
+}
+
+/* Scanline flicker */
+@keyframes scanFlicker {
+  0%, 94%, 100% { opacity: 0.22; }
+  95%            { opacity: 0.06; }
+  97%            { opacity: 0.30; }
+  99%            { opacity: 0.10; }
+}
+
+.neon-orb {
+  will-change: opacity, transform;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform-origin: center center;
+}
+
+.neon-orb-pink   { animation: breathePink   12s ease-in-out infinite; }
+.neon-orb-cyan   { animation: breatheCyan   12s ease-in-out infinite; }
+.neon-orb-purple { animation: breathePurple 16s ease-in-out infinite; }
+.neon-orb-orange { animation: breatheOrange 10s ease-in-out infinite; }
+
+.neon-scanlines { animation: scanFlicker 8s steps(1) infinite; }
+
+/* ── Leaflet: remove focus outlines on markers ── */
+.leaflet-marker-icon:focus,
+.leaflet-marker-icon:focus-visible,
+.leaflet-marker-icon *:focus,
+.leaflet-marker-icon *:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ── Leaflet map popup — dark Airbnb-style ── */
+.pvc-map-popup .leaflet-popup-content-wrapper {
+  background: rgba(26, 21, 16, 0.96);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 168, 64, 0.25);
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(232, 168, 64, 0.12);
+  color: #fff;
+  padding: 0;
+  overflow: hidden;
+}
+.pvc-map-popup .leaflet-popup-content {
+  margin: 0;
+  line-height: 1.4;
+}
+.pvc-map-popup .leaflet-popup-tip {
+  background: rgba(26, 21, 16, 0.96);
+  border: 1px solid rgba(232, 168, 64, 0.25);
+  border-top: none;
+  border-left: none;
+}
+.pvc-map-popup .leaflet-popup-close-button {
+  color: rgba(255,255,255,0.7) !important;
+  font-size: 18px !important;
+  top: 8px !important;
+  right: 8px !important;
+  width: 24px !important;
+  height: 24px !important;
+  background: rgba(0,0,0,0.5) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 10 !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+}
+.pvc-map-popup .leaflet-popup-close-button:hover {
+  color: #e8a840 !important;
+  background: rgba(0,0,0,0.7) !important;
+}
+.pvc-map-popup a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+/* Smaller map popup card on mobile */
+@media (max-width: 640px) {
+  .pvc-map-popup .pvc-popup-card {
+    width: 192px !important;
+  }
+  .pvc-map-popup .pvc-popup-img {
+    height: 110px !important;
+  }
+  .pvc-map-popup .pvc-popup-body {
+    padding: 8px 10px 10px !important;
+  }
+}
+
+/* Mention & hashtag tags in contentEditable editor */
+.usermention-tag {
+  color: #e8a840;
+  font-weight: 600;
+}
+.mention-tag {
+  color: #C084FC;
+  font-weight: 600;
+}
+.hashtag-tag {
+  color: #3db8a0;
+  font-weight: 600;
 }

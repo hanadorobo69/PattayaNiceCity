@@ -1,0 +1,1466 @@
+{
+  "metadata": {
+    "verifiedAt": "2026-04-08T14:10:11.028Z",
+    "source": "Google Places API deep verification with reviews",
+    "totalVerified": 45,
+    "totalRejected": 0,
+    "byType": {
+      "russian-gogo": 3,
+      "girly-bar": 31,
+      "bar": 3,
+      "club": 3,
+      "gentlemans-club": 1,
+      "ladyboy-bar": 1,
+      "gogo-bar": 2,
+      "bj-bar": 1
+    }
+  },
+  "verified": [
+    {
+      "name": "TOKO Bar",
+      "originalName": "TOKO Bar",
+      "type": "russian-gogo",
+      "classificationReason": "Russian venue on Walking Street",
+      "zone": "Walking Street",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJXZxgimGXAjERFJIqoYpENZE",
+        "name": "TOKO Bar",
+        "lat": 12.9249595,
+        "lng": 100.87003469999999,
+        "rating": 4.9,
+        "user_ratings_total": 283,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "583/1, ตําบล หนองปรือ, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "cocktail_bar",
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "cocktail_bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=10463344671465312788&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "I had such an amazing time at TOKO Bar! The atmosphere is vibrant and stylish - with cool neon lights and a really cozy tropical vibe. The staff is su",
+          "ita Amazing, the taste and Environment is so well, verry recomended",
+          "I like bars where I can hear the other person talking while having fun music on the back so definitely will be my go to spot in Walking Street now! St"
+        ]
+      }
+    },
+    {
+      "name": "Beertique - Pattaya Beach",
+      "originalName": "Beertique - Pattaya Beach",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi Made in Thailand",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJVdgNOACXAjERCI19TKxMYq4",
+        "name": "Beertique - Pattaya Beach",
+        "lat": 12.930978,
+        "lng": 100.87894089999999,
+        "rating": 4.8,
+        "user_ratings_total": 273,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "183 Beach Rd, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=12565690213218487560&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "This place gets the balance right.\nLive orchestra music creates atmosphere without overpowering conversation, which is rare. The setting feels lively ",
+          "A hidden gem for beer lovers in Pattaya!\n\nWhen I visited Pattaya last year, I remember this place was still under construction. Recently, after seeing",
+          "A great place to chill, relax, and enjoy the craft beer selection while facing the beach. Friendly staff ,very welcoming and offered to taste the beer"
+        ]
+      }
+    },
+    {
+      "name": "Shooters Pattaya",
+      "originalName": "Shooters Pattaya",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Soi 7",
+      "source": "new",
+      "google": {
+        "place_id": "ChIJHQVZZgaWAjERQLqIvtfos4U",
+        "name": "Shooters Pattaya",
+        "lat": 12.935948199999999,
+        "lng": 100.88581599999999,
+        "rating": 4.2,
+        "user_ratings_total": 236,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Na Kluea, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "sports_bar",
+          "night_club",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "http://www.shooterspattaya.com/",
+        "maps_url": "https://maps.google.com/?cid=9634300041187867200&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "In August of 2025 drink prices were very reasonable. As of October 2025 drink prices skyrocketed to very unreasonable prices. Quite disappointed with ",
+          "Not what it used to be back b4 2020.  Higher drink prices have caused it to lose customers and now has less staff.  Sad to see.",
+          "Some kind of soft gogo bar, menu without prices, nobody welcoming."
+        ]
+      }
+    },
+    {
+      "name": "Scooter's Bar Soi Buakhao",
+      "originalName": "Scooter's Bar Soi Buakhao",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi Buakhao",
+      "source": "recovered-false-dupe",
+      "google": {
+        "place_id": "ChIJLagAIwmWAjERxXU2BevR3Xo",
+        "name": "Scooter's Bar Soi Buakhao",
+        "lat": 12.9303413,
+        "lng": 100.8859107,
+        "rating": 4,
+        "user_ratings_total": 208,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVJP+49M, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=8853463249815238085&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Quite nice UK style club. Girls are wearing some UK are flag style dress and all girls seems to be tall and skinny. I like that type so for me it was ",
+          "Very rude staff walked in off the street shown to a table ordered our drinks and started talking to the English guy at the table. Very interesting as ",
+          "Unless you are an older white guy the staff is extremely rude and ignores you. A few of the ladies were extremely nice but overall if you are not an o"
+        ]
+      }
+    },
+    {
+      "name": "Buttercups Bar & VIP Sports Lounge Soi Diana Pattaya",
+      "originalName": "Buttercups Bar & VIP Sports Lounge Soi Diana Pattaya",
+      "type": "bar",
+      "classificationReason": "Normal bar (vip sports)",
+      "zone": "Second Road",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJQSAfBJiXAjERldrP2jmDt6s",
+        "name": "Buttercups Bar & VIP Sports Lounge Soi Diana Pattaya",
+        "lat": 12.929018,
+        "lng": 100.88465810000001,
+        "rating": 4.8,
+        "user_ratings_total": 179,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "33 55 Pattayasaisong 13, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "sports_bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://facebook.com/buttercupspattaya",
+        "maps_url": "https://maps.google.com/?cid=12373502785731156629&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Buttercups is a real gem, offering a mix of all those things you like in a pub/club without the noise and chaos.  Located on Soi Diana near the Soi Bu",
+          "What a great place the staff here are very friendly. Prices are reasonable. Spent many a night in here. They’ll play any song you like. If you like fo",
+          "Nestled in the heart of the town, this bar is a hidden gem that exudes a nice, clean, and relaxed atmosphere. The moment you step inside, you are gree"
+        ]
+      }
+    },
+    {
+      "name": "Deluzion",
+      "originalName": "Deluzion",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi 7",
+      "source": "new",
+      "google": {
+        "place_id": "ChIJvbpJj06XAjER5yiKSBeGO9s",
+        "name": "Deluzion",
+        "lat": 12.9358791,
+        "lng": 100.88572180000001,
+        "rating": 4.9,
+        "user_ratings_total": 110,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Soi Pattaya 7, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://youtube.com/@mactvtravel?si=tjgPLzoQGZn9tNeM",
+        "maps_url": "https://maps.google.com/?cid=15797367552491530471&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "What a great new asset to Soi 7,  it's a trendy and modern small bar.  Great music and a full selection of drinks.  All the staff and the owner are po",
+          "Great fully renovated bar setup by an awesome guy. Well worth the visit. Modern and lively spot.",
+          "Very cool new bar.  Ultra friendly vibes with uplifting music and smart audio visuals.  And attractive staff 😁"
+        ]
+      }
+    },
+    {
+      "name": "Mixx Nightclub Pattaya",
+      "originalName": "Mixx Nightclub Pattaya",
+      "type": "club",
+      "classificationReason": "Nightclub (name)",
+      "zone": "Pattaya",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJifN6wkuVAjERnNbgeiWhVoE",
+        "name": "Mixx Nightclub Pattaya",
+        "lat": 12.925654,
+        "lng": 100.8723708,
+        "rating": 4.1,
+        "user_ratings_total": 90,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "104, 4 Moo 10, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "night_club",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "night_club",
+        "summary": "",
+        "website": "https://www.facebook.com/share/1D5xAQqpFi/?mibextid=wwXIfr",
+        "maps_url": "https://maps.google.com/?cid=9319813661237237404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Hi guys...... are u first time in pattaya ? Looking for a great nightclub experience? Look no further than this amazing venue! From the moment you ste",
+          "I had such a great time at Mixx Nightclub Pattaya! The music was awesome, the DJs kept the vibe going all night, and the lights made the atmosphere so",
+          "Good service here, love it :3\nWe got a free 1 Sangsom we need to pay only mix!!\nMaybe next time is here too"
+        ]
+      }
+    },
+    {
+      "name": "VOODOO Pattaya",
+      "originalName": "VOODOO Pattaya",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (suggestive name)",
+      "zone": "Soi Buakhao",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJDweczdWXAjERXfYVhpB90x8",
+        "name": "VOODOO Pattaya",
+        "lat": 12.929921900000002,
+        "lng": 100.8854435,
+        "rating": 4.4,
+        "user_ratings_total": 63,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "524/22, Honey, 11 ซ.บัวขาว เมืองพัทยา อำเภอบางละมุง ชลบุรี 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.facebook.com/voodoopattaya",
+        "maps_url": "https://maps.google.com/?cid=2293314694940063325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Nice clean bar, great service, friendly hostesses always one of my favourites in the Central Pattaya area to drop by for a few cold beers, Kan is one ",
+          "Great owners, got to meet both of them during our visit.\nIf you don't like the music, ask to change it.\nDrinks where average price, but a bit stronger",
+          "Nice bar with beautiful and friendly girls especially the two sisters 😍😍."
+        ]
+      }
+    },
+    {
+      "name": "Sky Music Bar soi7",
+      "originalName": "Sky Music Bar soi7",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Soi 7",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJiwKhOPWXAjER4NsQ6hBNgFI",
+        "name": "Sky Music Bar soi7",
+        "lat": 12.9358617,
+        "lng": 100.884692,
+        "rating": 4.4,
+        "user_ratings_total": 57,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "live_music_venue",
+          "night_club",
+          "event_venue",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.facebook.com/SkyMusicLiveBar",
+        "maps_url": "https://maps.google.com/?cid=5944836243170843616&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Part of several bars in an open plan environment, best thing about the place is the live music with an amazing Filipino band playing\nI was slightly an",
+          "I had an amazing time at Sky Music Live Bar! 🎶 The live music was fantastic, creating such a great atmosphere. The bar staff were friendly and attent",
+          "Definitely one of the better bands in town and my beers are only 75 baht this year so pretty good value for a bar with a decent band.  I've been comin"
+        ]
+      }
+    },
+    {
+      "name": "Emma's Bar Tree Town Pattaya",
+      "originalName": "Emma's Bar Tree Town Pattaya",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Tree Town",
+      "source": "recovered-false-dupe",
+      "google": {
+        "place_id": "ChIJ03LywemXAjERHKRHjfJ7uUM",
+        "name": "Emma's Bar Tree Town Pattaya",
+        "lat": 12.9318432,
+        "lng": 100.88523479999999,
+        "rating": 4.8,
+        "user_ratings_total": 53,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "502, Tree Town Night Market, 75 ซ.บัวขาว เมืองพัทยา อำเภอบางละมุง ชลบุรี 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://emmasbar.com/",
+        "maps_url": "https://maps.google.com/?cid=4880067952915227676&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Pricey venue for ordinary bar , first check prices ( even lady drink)",
+          "Another of those bars at tree town. Lovely atmosphere.",
+          "Very nice bar at Tree Town.\nGood ambiance.\nKhun Sophia ( Malivan Pochai ) is very friendly and helpful.\nThanks, Emma's Bar 🍸 😘 ❤️"
+        ]
+      }
+    },
+    {
+      "name": "Helicopter Bar",
+      "originalName": "Helicopter Bar",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi 6",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJg0DjlkuXAjEReIlPhbnk4II",
+        "name": "Helicopter Bar",
+        "lat": 12.9423701,
+        "lng": 100.88609079999999,
+        "rating": 4.2,
+        "user_ratings_total": 49,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Pattaya Soi 6, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=9430789105170483576&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Went to this bar recently at around 12am, left disappointed. Was served drink upon arrival & spoke to a few girls, but was then ignored & left alone f",
+          "Another great soi 6 bar with fun girls",
+          "Awesome bar! One of the best on Soi 6! Great girls, great prices, and awesome owners and managers! The service is fantastic and they take good care of"
+        ]
+      }
+    },
+    {
+      "name": "CLUB 555",
+      "originalName": "CLUB 555",
+      "type": "club",
+      "classificationReason": "Nightclub (name)",
+      "zone": "Soi Buakhao",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJK4qeDpKXAjERpkG6s2A2iGQ",
+        "name": "CLUB 555",
+        "lat": 12.9280803,
+        "lng": 100.88343619999999,
+        "rating": 4.1,
+        "user_ratings_total": 49,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "15 Soi Buakhao, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "",
+        "summary": "",
+        "website": "https://www.facebook.com/Club555Pattaya/",
+        "maps_url": "https://maps.google.com/?cid=7244099789585531302&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Great atmosphere, friendly fun girls, had a great time 👍 found a new bar game 😜 and the order in food is spot on 🤤",
+          "Very small place in a good location. A very pleasant surprise. Has a lot of lovely ladies  for such a small place, better than a beer bar! U pay sligh",
+          "I don't think they actually cook at the club. It is a gentleman club with hostess girls that will keep you company if you buy them lady drinks. The la"
+        ]
+      }
+    },
+    {
+      "name": "Russian Shop",
+      "originalName": "Russian Shop",
+      "type": "russian-gogo",
+      "classificationReason": "Russian venue on Walking Street",
+      "zone": "Walking Street",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJO3ofY4SXAjERAyZBXbfPG9s",
+        "name": "Russian Shop",
+        "lat": 12.9189942,
+        "lng": 100.86138489999999,
+        "rating": 4.5,
+        "user_ratings_total": 48,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Aurora Pratumnak, Soi Kasetsin 7, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "store",
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "store",
+        "summary": "",
+        "website": "https://wa.me/c/66629542272",
+        "maps_url": "https://maps.google.com/?cid=15788441305127921155&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Guys, thank you so much for your products, for giving us the opportunity to experience the taste of our homeland)))), because we really miss our produ",
+          "The food here is delicious. I periodically buy dried fish and other goods from them. But last time my wife and I got fish poisoning. 🤢 It's good that",
+          "An incredibly delicious and pleasant place! Exemplary homemade borscht, delicious kvass (which they also make here), and perfect homemade salo (lard)!"
+        ]
+      }
+    },
+    {
+      "name": "M&M Bar 280/22 Moo 9 Nong Prue Banglamung Chonburi",
+      "originalName": "M&M Bar 280/22 Moo 9 Nong Prue Banglamung Chonburi",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi Buakhao",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJoU2EqxCXAjERRmTzAlsrlmo",
+        "name": "M&M Bar 280/22 Moo 9 Nong Prue Banglamung Chonburi",
+        "lat": 12.9341454,
+        "lng": 100.8888077,
+        "rating": 4.9,
+        "user_ratings_total": 41,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Soi Buakhao, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=7680373884418483270&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "People make a bar and here you'll just meet new friends. Always a superb night, or day, in here. Check out Mark About Pattaya on YouTube for proof of ",
+          "Just left m and n bar, my wife and I were invited in with a very friendly manner, and although Mark is running the gaff, the girls are very capable of",
+          "Went along as I follow Mark on Youtube. Great little bar, good prices and a loyalty card. Great staff, friendly and funny. Had a good couple of nights"
+        ]
+      }
+    },
+    {
+      "name": "The Backyard Pattaya",
+      "originalName": "The Backyard Pattaya",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Soi Chaiyapoon",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJt5naAieXAjERwpG25ziRbxQ",
+        "name": "The Backyard Pattaya",
+        "lat": 12.9288575,
+        "lng": 100.88552410000001,
+        "rating": 4.5,
+        "user_ratings_total": 40,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "383, 109 chalermprakiat 25, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.facebook.com/TheBackyardPattaya",
+        "maps_url": "https://maps.google.com/?cid=1472555276765139394&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Best bar on this soi. Manager manages. Girls attentive. Serve most drinks not available elsewhere.",
+          "Obviously hundreds of bars to choose from in Pattaya, but if you live here, you tend to go to a few regular places.  Backyard is a regular for us, fri",
+          "Fantastic bar, craig and bozz really make you feel welcome and a part of the family, cheap drinks, friendly staff and beautiful bar girls. Once you go"
+        ]
+      }
+    },
+    {
+      "name": "X Club Pattaya",
+      "originalName": "X Club Pattaya",
+      "type": "club",
+      "classificationReason": "Nightclub (name)",
+      "zone": "Soi Chaiyapoon",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJfbywMW-XAjERbyw33D0tTWQ",
+        "name": "X Club Pattaya",
+        "lat": 12.928483,
+        "lng": 100.8860765,
+        "rating": 4.1,
+        "user_ratings_total": 37,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Soi Chaiapoon, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=7227482720710372463&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Bar behind tinted doors with confortables seats and friendly staff.",
+          "Just go to soi 6 !\n\nTiresome. Disorganised.\n\nTheir is no \"x\" in the x-club. The decals are a fraud.\n\nFirst time there. Told to pick a host but then it",
+          "The bar has a lively vibe, and the staff is friendly.\nA solid spot for a night out if you’re looking to experience the Pattaya nightlife."
+        ]
+      }
+    },
+    {
+      "name": "НАША РАША walking street",
+      "originalName": "НАША РАША walking street",
+      "type": "russian-gogo",
+      "classificationReason": "Russian venue on Walking Street",
+      "zone": "Walking Street",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJtyuZcHyXAjERKjUca2O3L0Q",
+        "name": "НАША РАША walking street",
+        "lat": 12.9255039,
+        "lng": 100.8711853,
+        "rating": 4,
+        "user_ratings_total": 37,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Walking St, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=4913347356111156522&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "The atmosphere is good.\nThe staff is friendly and the music is great",
+          "Russian is da best!!",
+          "Very beautiful location"
+        ]
+      }
+    },
+    {
+      "name": "Pattaya Craft Beer Hub (Brewdog)",
+      "originalName": "Pattaya Craft Beer Hub (Brewdog)",
+      "type": "bar",
+      "classificationReason": "Normal bar (craft beer)",
+      "zone": "Soi Buakhao",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJnxcF3MG_AjERpDIW9aEJPfQ",
+        "name": "Pattaya Craft Beer Hub (Brewdog)",
+        "lat": 12.927895699999999,
+        "lng": 100.88400449999999,
+        "rating": 4.7,
+        "user_ratings_total": 28,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "420/142-143, เมืองพัทยา อำเภอบางละมุง ชลบุรี 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "http://www.facebook.com/pattayacraftbeerhub",
+        "maps_url": "https://maps.google.com/?cid=17599233510040023716&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Branded as Sports Hub inside.\n\nGrand opening December 1, 2023. High-end draught beers from the UK include Brewdog (6), St. Bernardous Tripel, and Mais",
+          "Nice sport bar\nHuge area, billiard tables, many TV around to watch any sport\nGood choice of draught beer\nUnfortunately I couldn't try the grapefruit o",
+          "Great bar with excellent beers. Tried the Wingman, Hazy Janes, Punk IPA and Elvis Juice all top notch. Friendly staff and good atmosphere."
+        ]
+      }
+    },
+    {
+      "name": "Celona Bar",
+      "originalName": "Celona Bar",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "LK Metro",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJ5wp24JaXAjERUaoJS5I7VLw",
+        "name": "Celona Bar",
+        "lat": 12.9300874,
+        "lng": 100.8847985,
+        "rating": 3.8,
+        "user_ratings_total": 27,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "33 140 M 10 Soi L K Metro, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=13570537076684335697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Celona Bar is one of the best beer bars in LK Metro. I think they open at 5pm. Go there when they open to see the whole line-up.",
+          "This place has a minimum scan amount that they don't advertise or mention until you are ready to pay. Way better places in the area\n\nI would avoid!!!",
+          "Went to this bar for the 2nd time the other night, & was still disappointed on both occasions. First time round, service was okay, but lack of interes"
+        ]
+      }
+    },
+    {
+      "name": "Hedonism",
+      "originalName": "Hedonism",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Soi 7",
+      "source": "new",
+      "google": {
+        "place_id": "ChIJO43wfBeXAjERSzaud-GtsE4",
+        "name": "Hedonism",
+        "lat": 12.9357895,
+        "lng": 100.8858149,
+        "rating": 4,
+        "user_ratings_total": 23,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVPP+888, Soi Pattaya 7, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.facebook.com/HedonismBarPattayasoi7",
+        "maps_url": "https://maps.google.com/?cid=5670223114746607179&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "All stars are amazing. I’ve seen a  great selection oh my stars",
+          "Some of the staff are nice but the owners are very greedy and inflexible! If you want.to bar fine a girl, you have to pay much higher prices than othe",
+          "Just ask for Danny the manager, super friendly bar ...."
+        ]
+      }
+    },
+    {
+      "name": "Sober Bar Pattaya",
+      "originalName": "Sober Bar Pattaya",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi Chaiyapoon",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJf7e_FQCXAjERAgD1K1Su580",
+        "name": "Sober Bar Pattaya",
+        "lat": 12.9281753,
+        "lng": 100.88674619999999,
+        "rating": 5,
+        "user_ratings_total": 22,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "383 25, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=14837019173933350914&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "This place is laid back and fantastic if you're looking to get away from the madness and just relax for some fun!",
+          "Very friendly place, with all sports on tv, f1, football,  rugby, the ambient is fantastic, i reccomend this place if you want a cold beer and relax.",
+          "Best Bar in Pattaya. The owner is awesome"
+        ]
+      }
+    },
+    {
+      "name": "Pink Devil",
+      "originalName": "Pink Devil",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (suggestive name)",
+      "zone": "Soi Buakhao",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJ6XkIb-SXAjERdq6qaRN4ZOg",
+        "name": "Pink Devil",
+        "lat": 12.9293293,
+        "lng": 100.8850734,
+        "rating": 4.1,
+        "user_ratings_total": 21,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVHP+P2P, Soi Buakhao, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.facebook.com/share/DJLQJRXGnn3vhzjW/?mibextid=LQQJ4d",
+        "maps_url": "https://maps.google.com/?cid=16745641339242851958&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Nice bar with friendly staff where you can have a good time. This ist a normal bar but the staff have every day nice Outfits. The music ist for me to ",
+          "Disappointed because while girls were pretty, bought my drink, sat down, not a one of them paid me any attention.\n\nWas kinda surprised.  Invited me in",
+          "90 baht beers, even when other bars are doing happy hour… Will not return.\nRate of staff 3/10 Maybe…"
+        ]
+      }
+    },
+    {
+      "name": "Buddy Bar",
+      "originalName": "Buddy Bar",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Tree Town",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJp3uKNMmXAjER8AAIw_2_IpM",
+        "name": "Buddy Bar",
+        "lat": 12.9310387,
+        "lng": 100.88544019999999,
+        "rating": 4.1,
+        "user_ratings_total": 21,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Thailand, Chang Wat Chon Buri, Amphoe Bang Lamung, Muang Pattaya, Soi Pattayasaisong 9, Tree Town郵區編號: 20150",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=10602247569403281648&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Nice location for drinks and interacting with the bar girls.",
+          "Average bar with friendly staff",
+          "Pretty good with friendly girls😜"
+        ]
+      }
+    },
+    {
+      "name": "Mischief Bar",
+      "originalName": "Mischief Bar",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (suggestive name)",
+      "zone": "Soi Made in Thailand",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJr0k4cl6XAjERy7UbUgdhixU",
+        "name": "Mischief Bar",
+        "lat": 12.932107499999999,
+        "lng": 100.8864817,
+        "rating": 4.2,
+        "user_ratings_total": 19,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "soi Made in Thailand, WVJP+RHX ซ.บัวขาว เมืองพัทยา อำเภอบางละมุง ชลบุรี 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=1552441180629480907&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Friendly ladies, great drinks and enjoyable time. Noona, Mint and the others are super chill and fun to be around.",
+          "If u wanna make to good memory. ?\nHere is so best choice place. They are really good have to attitude for customers. Don't worry.  And don't have to c",
+          "The women here are all lovely and have good personalities. The shop owner is kind and friendly and does not take advantage of customers."
+        ]
+      }
+    },
+    {
+      "name": "Annie's Bar",
+      "originalName": "Annie's Bar",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi Chaiyapoon",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJebe1ZgmWAjERfiekZ_dvNLE",
+        "name": "Annie's Bar",
+        "lat": 12.9285079,
+        "lng": 100.88602320000001,
+        "rating": 4.2,
+        "user_ratings_total": 13,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "383/45 Soi Chaiyapoon, Pattaya, Chonburi, Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=12768953951888615294&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Great set up.... manager is easy going and let you choose music. Girls are sweet (beauty wise an average 6.... 7 though..... except one who I give a g",
+          "The veteran barladies were noticeably unattractive, disinterested and should have perhaps been encouraged to eat smaller meal portions or at the very ",
+          "Great bar with a few hot ladies who wear a different outfit every day!! If you like schoolgirls, nurses, chamber maids etc... this is the bar for you."
+        ]
+      }
+    },
+    {
+      "name": "BeYond 2 - Gentlemen's Club",
+      "originalName": "BeYond 2 - Gentlemen's Club",
+      "type": "gentlemans-club",
+      "classificationReason": "Gentlemen's club (name)",
+      "zone": "Soi Chaiyapoon",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJLTMeq8OXAjERilcpvQ97aD4",
+        "name": "BeYond 2 - Gentlemen's Club",
+        "lat": 12.9286783,
+        "lng": 100.8859601,
+        "rating": 4.5,
+        "user_ratings_total": 11,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Soi Chaiyapoon, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=4496979535457769354&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Popular bar for expats and regular visitors.  Not as full on as some Gents clubs, but still ticks the boxes.  I like the fact you can choose your own ",
+          "Bar behind tinted window, staff line up in front of it.\n\nInside there are chairs along the bar, confortables sofa and bench.\n\nGood mood, playful.\nReas",
+          "Always a good time in  there, with bob and wim, well worth a visit,  good drinks selection,  and lovely hosts 😘"
+        ]
+      }
+    },
+    {
+      "name": "Edrick's Bar Pattaya Soi7",
+      "originalName": "Edrick's Bar Pattaya Soi7",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Soi 7",
+      "source": "new",
+      "google": {
+        "place_id": "ChIJ7SonBhuVAjERUQS3hpBhWIg",
+        "name": "Edrick's Bar Pattaya Soi7",
+        "lat": 12.936083799999999,
+        "lng": 100.885239,
+        "rating": 4,
+        "user_ratings_total": 10,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "221, Soi Pattaya 7, ตำบล หนองปรือ, Amphoe Bang Lamung, Chang Wat Chon Buri 20260, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=9824709860472063057&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Went here with the crew back in August 2025. We had an amazing time, we started the night off here and finished the night a few times. The ladies are ",
+          "I found this bar through YouTube and I am very interested in Edrick's bar.\nBecause the owner of this bar said that he has an ambitious plan for East A",
+          "The bar owner is a very nice and honest person. He doesn't overcharge drunk people and takes care of his customers. His employees are very polite and "
+        ]
+      }
+    },
+    {
+      "name": "High5 Bar & LOUNGE PATTAYA",
+      "originalName": "High5 Bar & LOUNGE PATTAYA",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi Chaiyapoon",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJJfgkBm6XAjERxOjv_7YWsA8",
+        "name": "High5 Bar & LOUNGE PATTAYA",
+        "lat": 12.9285448,
+        "lng": 100.8862494,
+        "rating": 4.7,
+        "user_ratings_total": 10,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Soi chaiyapoon 383/89, เมืองพัทยา อำเภอบางละมุง ชลบุรี 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "http://www.high5barandguesthouse.com/",
+        "maps_url": "https://maps.google.com/?cid=1130428481703766212&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Have stayed here on several occasions now, good staff, good service.  Free Pool and 55 baht beers during Happy Hour.  Excellent value for money for th",
+          "Great location. Beer at the right price. Value for money.",
+          "Nice"
+        ]
+      }
+    },
+    {
+      "name": "WTF BAR & RESTAURANT'S",
+      "originalName": "WTF BAR & RESTAURANT'S",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Second Road",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJBzqiWtmXAjERYPxFwq4a6wY",
+        "name": "WTF BAR & RESTAURANT'S",
+        "lat": 12.9312962,
+        "lng": 100.88513189999999,
+        "rating": 4.4,
+        "user_ratings_total": 9,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVJP+H33, Soi Pattayasaisong 9, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.facebook.com/WTFtreetown/",
+        "maps_url": "https://maps.google.com/?cid=498521521640569952&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Terrible customer service. Went here last night, & the girl who I was trying to speak to who served my drink, decided to leave me because she said tha",
+          "Loved this bar before. Unfortunately new clueless ownership. All regulars stopped attending. Place is dead.\nWhy buy a bar and run it into the ground??",
+          "Nice staff. Free pool. 2 dollar beers. Good music 🎶"
+        ]
+      }
+    },
+    {
+      "name": "S Sister Bar",
+      "originalName": "S Sister Bar",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi Chaiyapoon",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJAUOJBCKVAjERuNGTpVVS_jQ",
+        "name": "S Sister Bar",
+        "lat": 12.9287558,
+        "lng": 100.88550280000001,
+        "rating": 3.4,
+        "user_ratings_total": 9,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVHP+G62, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.facebook.com/NichaWhiteAngel",
+        "maps_url": "https://maps.google.com/?cid=3818580061860385208&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "The only pretty one turned out to be the daughter of the owner. The mother-owner seated with us to make sure I did not do anything inappropriate ahah",
+          "Don’t go here , I was nice and buy them all drinks , then they kept putting drinks on my bill , scammers ended up with 9000 bill when should’ve been 3",
+          "Great bar, girls are all classy and nice which is refreshing. Really chill and nice vibe in there. They sit you down and walk you through the whole bi"
+        ]
+      }
+    },
+    {
+      "name": "Aoms Beer Bar Soi 7",
+      "originalName": "Aoms Beer Bar Soi 7",
+      "type": "ladyboy-bar",
+      "classificationReason": "Ladyboy bar (name)",
+      "zone": "Pattaya",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJlxXO-8mXAjERpg1PnZLVQvE",
+        "name": "Aoms Beer Bar Soi 7",
+        "lat": 12.9365474,
+        "lng": 100.88421009999999,
+        "rating": 4.1,
+        "user_ratings_total": 9,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVPM+JMH, Soi Pattaya 7, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=17384692337284681126&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Fantastic bar that a friend of mine has recently opened.\nI believe to be the only exclusive ladyboy bar on Soi 7 (I could be wrong) - but a very fun a",
+          "Nice friendly bar",
+          "Good lb bar in Soi 7. Friendly guys and women. No stress factor"
+        ]
+      }
+    },
+    {
+      "name": "Seven Sins",
+      "originalName": "Seven Sins",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "LK Metro",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJ-cy1yS2XAjERKBIFOKEYm9A",
+        "name": "Seven Sins",
+        "lat": 12.929945,
+        "lng": 100.8849795,
+        "rating": 4.4,
+        "user_ratings_total": 8,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Red Light District, 33/142 Soi L K Metro, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=15031635261987820072&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "I can tell you that it’s better for your hostesses to sit outside near the walkway like the other bars. Leave the patio seating open for customers. Th",
+          "Cute girls,  good staff,  usually busy,  decent pool table",
+          "my bar very nice and have lady 18-28"
+        ]
+      }
+    },
+    {
+      "name": "Big Bell Bar",
+      "originalName": "Big Bell Bar",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Tree Town",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJxef_A-GXAjERc7LpO9hBkbg",
+        "name": "Big Bell Bar",
+        "lat": 12.9313735,
+        "lng": 100.88484749999999,
+        "rating": 3.9,
+        "user_ratings_total": 8,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Tree town Soi Bua khao 502/ 70 10 m10, Bua Khao, เมืองพัทยา อำเภอบางละมุง ชลบุรี 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.facebook.com/profile.php?id=100075998591082",
+        "maps_url": "https://maps.google.com/?cid=13299483571575698035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "I got your number from Instagram.",
+          "Cold beer",
+          "disgusting service"
+        ]
+      }
+    },
+    {
+      "name": "JIE JIE BAR",
+      "originalName": "JIE JIE BAR",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi Chaiyapoon",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJJy-qHgCXAjERrVxMaHaZoZ8",
+        "name": "JIE JIE BAR",
+        "lat": 12.9285458,
+        "lng": 100.88589379999999,
+        "rating": 4.8,
+        "user_ratings_total": 8,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "383, 99 Soi Chaiyapoon, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=11502643657115983021&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "1 year I went here and met 5he most beautiful woman. She was so beautiful I had no idea until it was pointed out to me that most of the other ladies w",
+          "JIE JIE lady so gorgeous guys you need to come 🥳",
+          "Great place it’s now fully renovated staff are 10/10 such beautiful people great music awesome sound system drinks are cheap it’s in a great busy walk"
+        ]
+      }
+    },
+    {
+      "name": "The Body Club (Man) Pub",
+      "originalName": "The Body Club (Man) Pub",
+      "type": "bar",
+      "classificationReason": "Bar type on Google (outside nightlife zone)",
+      "zone": "Sunee Plaza",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJu5yDyxOWAjERe2FmjMD0Mpk",
+        "name": "The Body Club (Man) Pub",
+        "lat": 12.9275925,
+        "lng": 100.8758963,
+        "rating": 3.4,
+        "user_ratings_total": 8,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVHG+29J, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=11039154744464925051&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Bad service. Waiters drink alcohol instead of clearing tables and ashtrays, and bringing drinks. Unfriendly staff. They only like those who give tips.",
+          "Good but very expensive",
+          "I usually like this place a lot because the staff are clean, fun, and the Russian music is fun. The servers are very friendly and helpful. However, th"
+        ]
+      }
+    },
+    {
+      "name": "Funny Girl Bar",
+      "originalName": "Funny Girl Bar",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (suggestive name)",
+      "zone": "Pattaya",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJv2jF2QuWAjERFm7-ZL3sh3U",
+        "name": "Funny Girl Bar",
+        "lat": 12.927797,
+        "lng": 100.8867183,
+        "rating": 4.7,
+        "user_ratings_total": 7,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Soi Lengkee, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=8468997922480877078&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Fun bar, fun girls, fun games, free pool, nice atmosphere, to avoid the overcrowding and play pool and chat with ladys. Lots of food options with the ",
+          "fun place nice people",
+          "Very Nice & Cozy Place !!!"
+        ]
+      }
+    },
+    {
+      "name": "Utopia Soi 6 Pattaya",
+      "originalName": "Utopia Soi 6 Pattaya",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi 6",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJd3lj_fmXAjER953Jxw0YUC4",
+        "name": "Utopia Soi 6 Pattaya",
+        "lat": 12.942589199999999,
+        "lng": 100.88549049999999,
+        "rating": 2.1,
+        "user_ratings_total": 7,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVVP+25Q Red light district, Pattaya Soi 6, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "night_club",
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=3337193771347058167&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Walked into Utopia thinking I’d found paradise. Turns out it was more like the opposite of heaven… smells like someone bottled regret and sprayed it a",
+          "Don’t go this place. Mama San the most unfriendly person I have experienced in 3 years Thailand. She start drama without any reason. Bar smells very b",
+          "Stay away from this place. The girls are great but mamasung VERY VERY angry and rude for no reason. Pity for the staff that work there"
+        ]
+      }
+    },
+    {
+      "name": "Maggie Choo's",
+      "originalName": "Maggie Choo's",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi 6",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJ7Q-rLHiXAjERQ7E8ujxDlvU",
+        "name": "Maggie Choo's",
+        "lat": 12.9428363,
+        "lng": 100.88508589999999,
+        "rating": 4.6,
+        "user_ratings_total": 7,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVVP+42P Red light district, Pattaya Soi 6, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "night_club",
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://x.com/Maggiechoossoi6",
+        "maps_url": "https://maps.google.com/?cid=17696405713900581187&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Cozy bar nestled in Soi 6 nearby Pattaya Beach Road. Drinks are fare. Staff are friendly.",
+          "Very good",
+          "All the beautiful girls are ready to take care of you."
+        ]
+      }
+    },
+    {
+      "name": "Nice a gogo",
+      "originalName": "Nice a gogo",
+      "type": "gogo-bar",
+      "classificationReason": "GoGo bar (name)",
+      "zone": "Soi Diamond",
+      "source": "recovered-false-dupe",
+      "google": {
+        "place_id": "ChIJDwvUym6XAjERzsREIUscEOY",
+        "name": "Nice a gogo",
+        "lat": 12.925619399999999,
+        "lng": 100.8739537,
+        "rating": 4,
+        "user_ratings_total": 6,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVGF+6HW, Soi Diamond, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "",
+        "summary": "",
+        "website": "https://www.facebook.com/profile.php?id=100064013771104",
+        "maps_url": "https://maps.google.com/?cid=16577781337357075662&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Been visiting here for many days and had no problems giving away drinks until a pregnant (!) woman that works there like a cashier decided to get very",
+          "Energetic bar, mostly plump girls. Best draft price (after 10 p.m) B69 I enjoyed the Thai music.",
+          "Visited here back in  December 22,\nMy friend and I was given a warm welcome at the door, and there are some lovely girls that work here."
+        ]
+      }
+    },
+    {
+      "name": "Unreal Pattaya",
+      "originalName": "Unreal Pattaya",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Pattaya",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJDY6m2bKXAjER1uOnZ8VJBqI",
+        "name": "Unreal Pattaya",
+        "lat": 12.9299395,
+        "lng": 100.8846262,
+        "rating": 4,
+        "user_ratings_total": 5,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVHM+XVC Red Light District, Soi L K Metro, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "night_club",
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.facebook.com/Unreal-Pattaya-100952252384998",
+        "maps_url": "https://maps.google.com/?cid=11675100196201030614&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Went to visit today but the lady name Nam has poor attitude. Her face was unhappy throughout as though we owe her a living. Conversation skill was poo",
+          "Friendly sexy girls, nice atmosphere, not expensive, much better than Walking street.\nHigley recommend.",
+          "All r good looking friendly girls"
+        ]
+      }
+    },
+    {
+      "name": "Karobar Cocktails",
+      "originalName": "Karobar Cocktails",
+      "type": "girly-bar",
+      "classificationReason": "Bar in nightlife zone (default)",
+      "zone": "Soi Made in Thailand",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJJec1YACXAjERI6ZqDvADrKw",
+        "name": "Karobar Cocktails",
+        "lat": 12.9323506,
+        "lng": 100.88573799999999,
+        "rating": 5,
+        "user_ratings_total": 5,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "548, Maggie Mays Beer Garden, 4 Soi Made In Thailand เมืองพัทยา อำเภอบางละมุง ชลบุรี 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": "https://www.instagram.com/karobarcocktails?igsh=MWdseWV3bjFxOWZ4Zw==",
+        "maps_url": "https://maps.google.com/?cid=12442324200086742563&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "⭐️⭐️⭐️⭐️⭐️\nGreat atmosphere, nice music, and delicious cocktails 🍸\nFriendly staff and good service.\nPerfect place to chill or party with friends.\nHig",
+          "The atmosphere is great, the lighting is beautiful, and the music is just the right amount of fun. Perfect for both chilling and partying 🍸\nThe cockt"
+        ]
+      }
+    },
+    {
+      "name": "Good girl bar Buakhao15",
+      "originalName": "Good girl bar Buakhao15",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Soi Buakhao",
+      "source": "new",
+      "google": {
+        "place_id": "ChIJU9edfgCXAjERVgV5p0-ckE8",
+        "name": "Good girl bar Buakhao15",
+        "lat": 12.928615299999999,
+        "lng": 100.8813079,
+        "rating": 3.3,
+        "user_ratings_total": 4,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "Soi Buakhao, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=5733254191568717142&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "I recently visited the Good Girl Bar in Pattaya and was absolutely impressed! The service is exceptionally friendly and attentive. You feel welcome fr",
+          "Open bar in the evening.\n\nNewly renovated, cozy atmosphere."
+        ]
+      }
+    },
+    {
+      "name": "Mimi Bar",
+      "originalName": "Mimi Bar",
+      "type": "girly-bar",
+      "classificationReason": "Girly bar (confirmed by reviews)",
+      "zone": "Pattaya",
+      "source": "new",
+      "google": {
+        "place_id": "ChIJgd1dIQCXAjERF4W8YCamYEI",
+        "name": "Mimi Bar",
+        "lat": 12.922412699999999,
+        "lng": 100.87833499999999,
+        "rating": 5,
+        "user_ratings_total": 4,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "WVFH+292, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=4783005488029402391&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "❤️🎉",
+          "Very nice small bar, away from busy streets. Cozy and chilling place, and hostess/owner is just beautiful as Pattayan sunset",
+          "Very nice staff and god service."
+        ]
+      }
+    },
+    {
+      "name": "Blow Flo",
+      "originalName": "Blow Flo",
+      "type": "bj-bar",
+      "classificationReason": "BJ bar (name)",
+      "zone": "Pattaya",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJTSD9fy6XAjERFEuCvvzVETQ",
+        "name": "Blow Flo",
+        "lat": 12.9228893,
+        "lng": 100.8740942,
+        "rating": 4,
+        "user_ratings_total": 4,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "373 25 Pattaya Sai 2 Soi 18, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "bar",
+        "summary": "",
+        "website": null,
+        "maps_url": "https://maps.google.com/?cid=3752015246081018644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "chill smoke spot you can also get a massage and unwind upstairs if you want. The weed is fire and it has a good price on it too I recommend this spot "
+        ]
+      }
+    },
+    {
+      "name": "Dirty Money Bar - Pattaya A Go-Go",
+      "originalName": "Dirty Money Bar - Pattaya A Go-Go",
+      "type": "gogo-bar",
+      "classificationReason": "GoGo bar (name)",
+      "zone": "Soi Buakhao",
+      "source": "suspicious",
+      "google": {
+        "place_id": "ChIJS3C6TQCXAjERYTKcEX9kjZU",
+        "name": "Dirty Money Bar - Pattaya A Go-Go",
+        "lat": 12.925659099999999,
+        "lng": 100.88071509999999,
+        "rating": 3.3,
+        "user_ratings_total": 3,
+        "business_status": "OPERATIONAL",
+        "formatted_address": "316, 76 Soi Buakhao, Muang Pattaya, Amphoe Bang Lamung, Chang Wat Chon Buri 20150, Thailand",
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "primary_type": "",
+        "summary": "",
+        "website": "http://dirtymoneybar.com/",
+        "maps_url": "https://maps.google.com/?cid=10776379980286538337&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "review_excerpts": [
+          "Pleasant time.   Staff are as attentive as you want them to be",
+          "Been here with a part of gentle men club crawl.. out of all the GC the waiter here was very pushy only to our table despite spending so much may be be",
+          "This is a must-see for anyone tired of Walking Street and LK. The owner speaks a little Japanese."
+        ]
+      }
+    }
+  ],
+  "rejected": []
+}

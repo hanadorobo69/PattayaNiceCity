@@ -1,0 +1,6395 @@
+{
+  "generatedAt": "2026-04-01T07:53:47.891Z",
+  "command": "check",
+  "summary": {
+    "new": 0,
+    "duplicate": 135,
+    "maybe_duplicate": 1,
+    "needs_review": 3
+  },
+  "coverage": [
+    {
+      "category": "bar",
+      "current": 44,
+      "target": 54,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 18,
+      "maybes": 1
+    },
+    {
+      "category": "bj-bar",
+      "current": 25,
+      "target": 35,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 19,
+      "maybes": 1
+    },
+    {
+      "category": "club",
+      "current": 37,
+      "target": 47,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 18,
+      "maybes": 2
+    },
+    {
+      "category": "coffee-shop",
+      "current": 25,
+      "target": 35,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "freelance",
+      "current": 2,
+      "target": 2,
+      "gap": 0,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "gay-bar",
+      "current": 24,
+      "target": 34,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "gay-club",
+      "current": 6,
+      "target": 16,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "gay-gogo",
+      "current": 0,
+      "target": 10,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "gay-massage",
+      "current": 21,
+      "target": 31,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "gentlemans-club",
+      "current": 33,
+      "target": 43,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 19,
+      "maybes": 0
+    },
+    {
+      "category": "gogo-bar",
+      "current": 48,
+      "target": 58,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 42,
+      "maybes": 0
+    },
+    {
+      "category": "ktv",
+      "current": 27,
+      "target": 37,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 19,
+      "maybes": 0
+    },
+    {
+      "category": "ladyboy-bar",
+      "current": 24,
+      "target": 34,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "ladyboy-club",
+      "current": 10,
+      "target": 20,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "ladyboy-freelance",
+      "current": 1,
+      "target": 1,
+      "gap": 0,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "ladyboy-gogo",
+      "current": 3,
+      "target": 13,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "ladyboy-massage",
+      "current": 15,
+      "target": 25,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "massage",
+      "current": 30,
+      "target": 40,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "russian-gogo",
+      "current": 13,
+      "target": 23,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    },
+    {
+      "category": "short-time-hotel",
+      "current": 27,
+      "target": 37,
+      "gap": 10,
+      "newApproved": 0,
+      "duplicates": 0,
+      "maybes": 0
+    }
+  ],
+  "results": [
+    {
+      "name": "Differ Pub Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeoq0a0001lsipem4760jv",
+          "slug": "differ-pub-pattaya",
+          "name": "Differ Pub Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"differ\" === \"differ\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"differ\", \"differ\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"differ\" contains/in \"differ\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"differ-pub-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Differ Pub Pattaya\" (score 1.000)",
+      "address": "Phettrakul Rd, North Pattaya, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "North Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Flexx Club Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeosx9000blsipsldi97b1",
+          "slug": "flexx-club-pattaya",
+          "name": "Flexx Club Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"flexx\" === \"flexx\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"flexx\", \"flexx\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"flexx\" contains/in \"flexx\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"flexx-club-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Flexx Club Pattaya\" (score 1.000)",
+      "address": "Walking Street (derrière McDonald's / Soho Square), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Hollywood Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeouxo000llsiprijyvhm9",
+          "slug": "hollywood-pattaya",
+          "name": "Hollywood Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"hollywood\" === \"hollywood\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"hollywood\", \"hollywood\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"hollywood\" contains/in \"hollywood\""
+        },
+        {
+          "field": "address",
+          "score": 1,
+          "detail": "address JW = 1.000"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Hollywood Pattaya\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "North Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Candy Shop Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 0.9845061014990314,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeoypq000vlsipajewp0lq",
+          "slug": "candy-shop-pattaya",
+          "name": "Candy Shop Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"candy shop\" === \"candy shop\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"candy shop\", \"candy shop\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"candy shop\" contains/in \"candy shop\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"candy-shop-pattaya\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8398963821566562,
+          "detail": "address JW = 0.840"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Candy Shop Pattaya\" (score 0.985)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Marine Disco",
+      "categorySlug": "club",
+      "classification": "needs_review",
+      "score": 0.36620370370370364,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnd29axb018jlshtwrjsg888",
+          "slug": "mari-jari-sauna-and-spa",
+          "name": "Mari-Jari Sauna and Spa",
+          "category": "gay-massage"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "fuzzyName",
+          "score": 0.7847222222222222,
+          "detail": "JW(\"marine disco\", \"marijari sauna and\") = 0.785"
+        }
+      ],
+      "reason": "Weak signals matching \"Mari-Jari Sauna and Spa\" (score 0.366) — review recommended",
+      "address": "114 Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Club Panda",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 0.9787697963821412,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndep0gb0015lsipnq2632pr",
+          "slug": "club-panda",
+          "name": "Club Panda",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"panda\" === \"panda\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"panda\", \"panda\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"panda\" contains/in \"panda\""
+        },
+        {
+          "field": "address",
+          "score": 0.8372351055964155,
+          "detail": "address JW = 0.837"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Club Panda\" (score 0.979)",
+      "address": "139/15 Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "The Stones House",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 0.9829606945753131,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndep2dp001flsipzvx5ouv1",
+          "slug": "the-stones-house",
+          "name": "The Stones House",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the stones house\" === \"the stones house\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the stones house\", \"the stones house\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the stones house\" contains/in \"the stones house\""
+        },
+        {
+          "field": "address",
+          "score": 0.8693653250773994,
+          "detail": "address JW = 0.869"
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Stones House\" (score 0.983)",
+      "address": "85 Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "The Pier Nightclub",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndep52u001plsip6vdiioyp",
+          "slug": "the-pier-nightclub",
+          "name": "The Pier Nightclub",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the pier nightclub\" === \"the pier nightclub\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the pier nightclub\", \"the pier nightclub\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the pier nightclub\" contains/in \"the pier nightclub\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Pier Nightclub\" (score 1.000)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Tunnel Club Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndep93n001zlsipocce281f",
+          "slug": "tunnel-club-pattaya",
+          "name": "Tunnel Club Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"tunnel\" === \"tunnel\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"tunnel\", \"tunnel\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"tunnel\" contains/in \"tunnel\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"tunnel-club-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Tunnel Club Pattaya\" (score 1.000)",
+      "address": "Walking Street (en face du McDonald's), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "The Burj Club Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndepcpx0029lsip3d9yei66",
+          "slug": "the-burj-club-pattaya",
+          "name": "The Burj Club Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the burj\" === \"the burj\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the burj\", \"the burj\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the burj\" contains/in \"the burj\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"the-burj-club-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Burj Club Pattaya\" (score 1.000)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Sun's Club",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 0.979501911132346,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndepehv002jlsiphzr2aiqc",
+          "slug": "suns-club",
+          "name": "Sun's Club",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"suns\" === \"suns\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"suns\", \"suns\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"suns\" contains/in \"suns\""
+        },
+        {
+          "field": "address",
+          "score": 0.8428479853479853,
+          "detail": "address JW = 0.843"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Sun's Club\" (score 0.980)",
+      "address": "Walking Street Soi 16, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Boho Club Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndepgp9002tlsip99ri9zx7",
+          "slug": "boho-club-pattaya",
+          "name": "Boho Club Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"boho\" === \"boho\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"boho\", \"boho\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"boho\" contains/in \"boho\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"boho-club-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Boho Club Pattaya\" (score 1.000)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "The Duck Club Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndepkex0033lsipcxsl1xs2",
+          "slug": "the-duck-club-pattaya",
+          "name": "The Duck Club Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the duck\" === \"the duck\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the duck\", \"the duck\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the duck\" contains/in \"the duck\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"the-duck-club-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Duck Club Pattaya\" (score 1.000)",
+      "address": "Walking Street (sous Flexx Club), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Glam Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 0.979116919411738,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndepnb7003dlsipnr0vxk6q",
+          "slug": "glam-pattaya",
+          "name": "Glam Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"glam\" === \"glam\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"glam\", \"glam\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"glam\" contains/in \"glam\""
+        },
+        {
+          "field": "address",
+          "score": 0.8398963821566562,
+          "detail": "address JW = 0.840"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Glam Pattaya\" (score 0.979)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Shimmers Nightclub",
+      "categorySlug": "club",
+      "classification": "needs_review",
+      "score": 0.3753086419753086,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndep52u001plsip6vdiioyp",
+          "slug": "the-pier-nightclub",
+          "name": "The Pier Nightclub",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "fuzzyName",
+          "score": 0.8042328042328042,
+          "detail": "JW(\"shimmers nightclub\", \"the pier nightclub\") = 0.804"
+        }
+      ],
+      "reason": "Weak signals matching \"The Pier Nightclub\" (score 0.375) — review recommended",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "6 Eleven Bar",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndepq78003nlsip96h9xg5y",
+          "slug": "6-eleven-bar",
+          "name": "6 Eleven Bar",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"6 eleven\" === \"6 eleven\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"6 eleven\", \"6 eleven\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"6 eleven\" contains/in \"6 eleven\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"6 Eleven Bar\" (score 1.000)",
+      "address": "Walking Street area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Atlantis Club Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeptox003vlsip724q9xr0",
+          "slug": "atlantis-club-pattaya",
+          "name": "Atlantis Club Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"atlantis\" === \"atlantis\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"atlantis\", \"atlantis\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"atlantis\" contains/in \"atlantis\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"atlantis-club-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Atlantis Club Pattaya\" (score 1.000)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Lighthouse Club Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndepwvp0045lsip532jz1pz",
+          "slug": "lighthouse-club-pattaya",
+          "name": "Lighthouse Club Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"lighthouse\" === \"lighthouse\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"lighthouse\", \"lighthouse\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"lighthouse\" contains/in \"lighthouse\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"lighthouse-club-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Lighthouse Club Pattaya\" (score 1.000)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Skyfall Club Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 0.9845061014990314,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndepzb6004flsipmzym4a2j",
+          "slug": "skyfall-club-pattaya",
+          "name": "Skyfall Club Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"skyfall\" === \"skyfall\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"skyfall\", \"skyfall\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"skyfall\" contains/in \"skyfall\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"skyfall-club-pattaya\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8398963821566562,
+          "detail": "address JW = 0.840"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Skyfall Club Pattaya\" (score 0.985)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "One Night Jack Pattaya",
+      "categorySlug": "club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevzcf00pzlsipipufj4cm",
+          "slug": "one-night-jack",
+          "name": "One Night Jack",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"one night jack\" === \"one night jack\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"one night jack\", \"one night jack\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"one night jack\" contains/in \"one night jack\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"One Night Jack\" (score 1.000)",
+      "address": "Walking Street area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Palace A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.9837661763014626,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnd1xsz1004rlshtni9qqaw4",
+          "slug": "palace-a-go-go",
+          "name": "Palace A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"palace a go go\" === \"palace a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"palace a go go\", \"palace a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"palace a go go\" contains/in \"palace a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"palace-a-go-go\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8322504884484461,
+          "detail": "address JW = 0.832"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Palace A Go Go\" (score 0.984)",
+      "address": "Walking Street, opposite Lucifer area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Fahrenheit A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.985559789672693,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeq5bx004zlsipfv10b9rv",
+          "slug": "fahrenheit-a-go-go",
+          "name": "Fahrenheit A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"fahrenheit a go go\" === \"fahrenheit a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"fahrenheit a go go\", \"fahrenheit a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"fahrenheit a go go\" contains/in \"fahrenheit a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"fahrenheit-a-go-go\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8507844932844932,
+          "detail": "address JW = 0.851"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Fahrenheit A Go Go\" (score 0.986)",
+      "address": "Walking Street (côté mer), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Club Electric Blue",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeq92h0059lsip7u4e3gps",
+          "slug": "club-electric-blue",
+          "name": "Club Electric Blue",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"electric blue\" === \"electric blue\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"electric blue\", \"electric blue\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"electric blue\" contains/in \"electric blue\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"club-electric-blue\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Club Electric Blue\" (score 1.000)",
+      "address": "Soi Diamond, off Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Diamond",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Sensations A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqb6j005jlsiph093dmcf",
+          "slug": "sensations-a-go-go",
+          "name": "Sensations A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"sensations a go go\" === \"sensations a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"sensations a go go\", \"sensations a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"sensations a go go\" contains/in \"sensations a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"sensations-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Sensations A Go Go\" (score 1.000)",
+      "address": "Walking Street, vers le milieu de la rue, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Shark Club A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqcyy005tlsipquk72tse",
+          "slug": "shark-club-a-go-go",
+          "name": "Shark Club A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"shark a go go\" === \"shark a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"shark a go go\", \"shark a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"shark a go go\" contains/in \"shark a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"shark-club-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Shark Club A Go Go\" (score 1.000)",
+      "address": "Walking Street (près de Soi 15), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Iron Club",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqf3b0063lsipm8iy6imn",
+          "slug": "iron-club",
+          "name": "Iron Club",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"iron\" === \"iron\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"iron\", \"iron\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"iron\" contains/in \"iron\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Iron Club\" (score 1.000)",
+      "address": "Walking Street, proche de Bacarra, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Ka Boom A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqhpj006dlsipfeuri5nd",
+          "slug": "ka-boom-a-go-go",
+          "name": "Ka Boom A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"ka boom a go go\" === \"ka boom a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"ka boom a go go\", \"ka boom a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"ka boom a go go\" contains/in \"ka boom a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"ka-boom-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Ka Boom A Go Go\" (score 1.000)",
+      "address": "Walking Street (ancien Rich/Mandarin), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "PH 3.9 A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeql6u006nlsipd30wdlhh",
+          "slug": "ph-39-a-go-go",
+          "name": "PH 3.9 A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"ph 39 a go go\" === \"ph 39 a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"ph 39 a go go\", \"ph 39 a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"ph 39 a go go\" contains/in \"ph 39 a go go\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"PH 3.9 A Go Go\" (score 1.000)",
+      "address": "Walking Street area (ancien Moon), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Glass House A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.9845061014990314,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqonh006xlsipxikzddh1",
+          "slug": "glass-house-a-go-go",
+          "name": "Glass House A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"glass house a go go\" === \"glass house a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"glass house a go go\", \"glass house a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"glass house a go go\" contains/in \"glass house a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"glass-house-a-go-go\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8398963821566562,
+          "detail": "address JW = 0.840"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Glass House A Go Go\" (score 0.985)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Coco A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqrra0077lsip4rs62cdr",
+          "slug": "coco-a-go-go",
+          "name": "Coco A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"coco a go go\" === \"coco a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"coco a go go\", \"coco a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"coco a go go\" contains/in \"coco a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"coco-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Coco A Go Go\" (score 1.000)",
+      "address": "Walking Street (section centrale), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Tantra A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.9845143636167479,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqvrq007hlsip29qw4gsu",
+          "slug": "tantra-a-go-go",
+          "name": "Tantra A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"tantra a go go\" === \"tantra a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"tantra a go go\", \"tantra a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"tantra a go go\" contains/in \"tantra a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"tantra-a-go-go\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8399817573730617,
+          "detail": "address JW = 0.840"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Tantra A Go Go\" (score 0.985)",
+      "address": "Walking Street, vers Bali Hai Pier, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Bliss A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.985015790660952,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqxzd007rlsip2xp6ozib",
+          "slug": "bliss-a-go-go",
+          "name": "Bliss A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"bliss a go go\" === \"bliss a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"bliss a go go\", \"bliss a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"bliss a go go\" contains/in \"bliss a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"bliss-a-go-go\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8451631701631702,
+          "detail": "address JW = 0.845"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Bliss A Go Go\" (score 0.985)",
+      "address": "Walking Street or Soi 15 area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Mamasan Club",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnder0ex0081lsip8imeiy63",
+          "slug": "mamasan-club",
+          "name": "Mamasan Club",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"mamasan\" === \"mamasan\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"mamasan\", \"mamasan\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"mamasan\" contains/in \"mamasan\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Mamasan Club\" (score 1.000)",
+      "address": "Walking Street zone, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Peppermint A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.9836559139784947,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnder3t3008blsipsalqqiz4",
+          "slug": "peppermint-a-go-go",
+          "name": "Peppermint A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"peppermint a go go\" === \"peppermint a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"peppermint a go go\", \"peppermint a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"peppermint a go go\" contains/in \"peppermint a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"peppermint-a-go-go\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8311111111111111,
+          "detail": "address JW = 0.831"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Peppermint A Go Go\" (score 0.984)",
+      "address": "Walking Street, proche de Soi 15, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Alice A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnder5bl008llsipnixefe45",
+          "slug": "alice-a-go-go",
+          "name": "Alice A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"alice a go go\" === \"alice a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"alice a go go\", \"alice a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"alice a go go\" contains/in \"alice a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"alice-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Alice A Go Go\" (score 1.000)",
+      "address": "Walking Street sector, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Cupido Club",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnder5ku008vlsipg4smhhup",
+          "slug": "cupido-club",
+          "name": "Cupido Club",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"cupido\" === \"cupido\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"cupido\", \"cupido\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"cupido\" contains/in \"cupido\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Cupido Club\" (score 1.000)",
+      "address": "Walking Street area (ex-Mistys), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Candy Club A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnder7it008xlsipjuuejcxl",
+          "slug": "candy-club-a-go-go",
+          "name": "Candy Club A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"candy a go go\" === \"candy a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"candy a go go\", \"candy a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"candy a go go\" contains/in \"candy a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"candy-club-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Candy Club A Go Go\" (score 1.000)",
+      "address": "Walking Street (section centrale, côté mer), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Queen Club LK Metro",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnder9i60097lsipi7ug1vzl",
+          "slug": "queen-club-lk-metro",
+          "name": "Queen Club LK Metro",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"queen lk metro\" === \"queen lk metro\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"queen lk metro\", \"queen lk metro\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"queen lk metro\" contains/in \"queen lk metro\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"queen-club-lk-metro\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Queen Club LK Metro\" (score 1.000)",
+      "address": "Soi LK Metro, off Soi Diana / Soi Buakhao, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "LK Metro",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Champagne Agogo LK Metro",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndercqa009hlsip2zeaneng",
+          "slug": "champagne-agogo-lk-metro",
+          "name": "Champagne Agogo LK Metro",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"champagne agogo lk metro\" === \"champagne agogo lk metro\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"champagne agogo lk metro\", \"champagne agogo lk metro\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"champagne agogo lk metro\" contains/in \"champagne agogo lk metro\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"champagne-agogo-lk-metro\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Champagne Agogo LK Metro\" (score 1.000)",
+      "address": "Soi LK Metro, near LK Metropole Hotel, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "LK Metro",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Sugar Sugar Agogo",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndergno009rlsipcpg5c9b6",
+          "slug": "sugar-sugar-agogo",
+          "name": "Sugar Sugar Agogo",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"sugar sugar agogo\" === \"sugar sugar agogo\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"sugar sugar agogo\", \"sugar sugar agogo\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"sugar sugar agogo\" contains/in \"sugar sugar agogo\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"sugar-sugar-agogo\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Sugar Sugar Agogo\" (score 1.000)",
+      "address": "Soi LK Metro (près de l’angle vers Soi Buakhao), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "LK Metro",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Top Gun Agogo",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnderkcj00a1lsipz9g5gky4",
+          "slug": "top-gun-agogo",
+          "name": "Top Gun Agogo",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"top gun agogo\" === \"top gun agogo\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"top gun agogo\", \"top gun agogo\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"top gun agogo\" contains/in \"top gun agogo\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"top-gun-agogo\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Top Gun Agogo\" (score 1.000)",
+      "address": "Soi LK Metro, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "LK Metro",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Lolitas",
+      "categorySlug": "bj-bar",
+      "classification": "maybe_duplicate",
+      "score": 0.6066666666666666,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndf3o0x01hjlsipee9klcvr",
+          "slug": "lita-bar",
+          "name": "Lita Bar",
+          "category": "ladyboy-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "fuzzyName",
+          "score": 0.8714285714285714,
+          "detail": "JW(\"lolitas\", \"lita\") = 0.871"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"lolitas\" contains/in \"lita\""
+        }
+      ],
+      "reason": "Possible duplicate of \"Lita Bar\" (score 0.607) — NEEDS HUMAN REVIEW",
+      "address": "Soi Chaloem Phrakiat 25, off Soi Buakhao, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Buakhao",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Kittens Bar",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnderph200allsipiyzv3s0s",
+          "slug": "kittens-bar",
+          "name": "Kittens Bar",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"kittens\" === \"kittens\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"kittens\", \"kittens\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"kittens\" contains/in \"kittens\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Kittens Bar\" (score 1.000)",
+      "address": "Soi 13/2 (Soi Post Office), off Second Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 13/2",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Pump Station 1",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndersvx00avlsipluzvf0lz",
+          "slug": "pump-station-1",
+          "name": "Pump Station 1",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"pump station 1\" === \"pump station 1\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"pump station 1\", \"pump station 1\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"pump station 1\" contains/in \"pump station 1\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"pump-station-1\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Pump Station 1\" (score 1.000)",
+      "address": "Soi 13/2, opposite Kittens Bar, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 13/2",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Pump Station 2",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnderufn00b5lsip9vipykj1",
+          "slug": "pump-station-2",
+          "name": "Pump Station 2",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"pump station 2\" === \"pump station 2\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"pump station 2\", \"pump station 2\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"pump station 2\" contains/in \"pump station 2\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"pump-station-2\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Pump Station 2\" (score 1.000)",
+      "address": "Soi 13/2, near Pump Station 1, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 13/2",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Billion Beer Bar",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnderw5s00bflsipz0k4le0b",
+          "slug": "billion-beer-bar",
+          "name": "Billion Beer Bar",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"billion beer\" === \"billion beer\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"billion beer\", \"billion beer\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"billion beer\" contains/in \"billion beer\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"billion-beer-bar\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Billion Beer Bar\" (score 1.000)",
+      "address": "Soi 13/3, off Second Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 13/3",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Club 4",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnderzir00bjlsip0jyqc7qz",
+          "slug": "club-4",
+          "name": "Club 4",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"4\" === \"4\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"4\", \"4\") = 1.000"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Club 4\" (score 1.000)",
+      "address": "Bang Lamung, eastern Central Pattaya area, Chon Buri 20150, Thailand",
+      "district": "Bang Lamung",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Pirates Hostess Club",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndes31n00btlsipv7cc0l3p",
+          "slug": "pirates-hostess-club",
+          "name": "Pirates Hostess Club",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"pirates hostess\" === \"pirates hostess\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"pirates hostess\", \"pirates hostess\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"pirates hostess\" contains/in \"pirates hostess\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"pirates-hostess-club\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Pirates Hostess Club\" (score 1.000)",
+      "address": "Soi Bongkot 8 area, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Bongkot 8",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "King’s Club",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndes6tx00c3lsip5pncs9gd",
+          "slug": "kings-club",
+          "name": "King’s Club",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"kings\" === \"kings\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"kings\", \"kings\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"kings\" contains/in \"kings\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"King’s Club\" (score 1.000)",
+      "address": "3rd Road, near end of Soi Excite, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Third Road",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Click Bar (Lick Bar)",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndes8f100cdlsipykfves03",
+          "slug": "click-bar-lick-bar",
+          "name": "Click Bar (Lick Bar)",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"click lick\" === \"click lick\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"click lick\", \"click lick\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"click lick\" contains/in \"click lick\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"click-bar-lick-bar\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Click Bar (Lick Bar)\" (score 1.000)",
+      "address": "Pattaya Soi 6, off Second Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 6",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "My Friend You Bar",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndesbkf00chlsippms3nc3a",
+          "slug": "my-friend-you-bar",
+          "name": "My Friend You Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"my friend you\" === \"my friend you\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"my friend you\", \"my friend you\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"my friend you\" contains/in \"my friend you\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"my-friend-you-bar\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"My Friend You Bar\" (score 1.000)",
+      "address": "Pattaya Soi 6, about 70m from Second Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 6",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Full Moon Bar",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 0.9787825475017593,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndesf4a00crlsipjcmygxws",
+          "slug": "full-moon-bar",
+          "name": "Full Moon Bar",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"full moon\" === \"full moon\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"full moon\", \"full moon\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"full moon\" contains/in \"full moon\""
+        },
+        {
+          "field": "address",
+          "score": 0.8373328641801547,
+          "detail": "address JW = 0.837"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Full Moon Bar\" (score 0.979)",
+      "address": "Pattaya Soi 6, next to My Friend You Bar, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 6",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Hunny Lounge",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndesgro00d1lsipajym3wqh",
+          "slug": "hunny-lounge",
+          "name": "Hunny Lounge",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"hunny\" === \"hunny\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"hunny\", \"hunny\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"hunny\" contains/in \"hunny\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Hunny Lounge\" (score 1.000)",
+      "address": "Soi Honey (Soi 11 area), off Second Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Honey",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Lips Lounge",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 0.9798221203412637,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndesi1h00dblsipz55ux3vy",
+          "slug": "lips-lounge",
+          "name": "Lips Lounge",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"lips\" === \"lips\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"lips\", \"lips\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"lips\" contains/in \"lips\""
+        },
+        {
+          "field": "address",
+          "score": 0.8453029226163554,
+          "detail": "address JW = 0.845"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Lips Lounge\" (score 0.980)",
+      "address": "Soi Honey / Pattaya 10 Road area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Honey",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Bada Bing",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeslrr00dflsipn7gcywva",
+          "slug": "bada-bing",
+          "name": "Bada Bing",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"bada bing\" === \"bada bing\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"bada bing\", \"bada bing\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"bada bing\" contains/in \"bada bing\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Bada Bing\" (score 1.000)",
+      "address": "Soi Bongkot 8 area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Bongkot 8",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Good Fellas Bar",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndespfx00dplsipul7lazx1",
+          "slug": "good-fellas-bar",
+          "name": "Good Fellas Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"good fellas\" === \"good fellas\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"good fellas\", \"good fellas\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"good fellas\" contains/in \"good fellas\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"good-fellas-bar\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Good Fellas Bar\" (score 1.000)",
+      "address": "Pattaya Soi 6, off Second Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 6",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Green Bike Bar",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndesqe700dzlsipnbexu4a4",
+          "slug": "green-bike-bar",
+          "name": "Green Bike Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"green bike\" === \"green bike\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"green bike\", \"green bike\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"green bike\" contains/in \"green bike\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"green-bike-bar\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Green Bike Bar\" (score 1.000)",
+      "address": "Pattaya Soi 6, off Second Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 6",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Bunny Bar",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndestst00e1lsiphqi7ials",
+          "slug": "bunny-bar",
+          "name": "Bunny Bar",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"bunny\" === \"bunny\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"bunny\", \"bunny\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"bunny\" contains/in \"bunny\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Bunny Bar\" (score 1.000)",
+      "address": "Pattaya Soi 6, Muang Pattaya, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 6",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Lovers Lane",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeswou00eblsiprq21fkyg",
+          "slug": "lovers-lane",
+          "name": "Lovers Lane",
+          "category": "bj-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"lovers lane\" === \"lovers lane\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"lovers lane\", \"lovers lane\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"lovers lane\" contains/in \"lovers lane\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Lovers Lane\" (score 1.000)",
+      "address": "Pattaya Soi 6, Muang Pattaya, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 6",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Route 69",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndet0m600ellsipmw18flxs",
+          "slug": "route-69",
+          "name": "Route 69",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"route 69\" === \"route 69\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"route 69\", \"route 69\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"route 69\" contains/in \"route 69\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Route 69\" (score 1.000)",
+      "address": "Pattaya Soi 6, Muang Pattaya, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 6",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Red Point",
+      "categorySlug": "bj-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndet4gd00evlsipapiagiel",
+          "slug": "red-point",
+          "name": "Red Point",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"red point\" === \"red point\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"red point\", \"red point\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"red point\" contains/in \"red point\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Red Point\" (score 1.000)",
+      "address": "Pattaya Soi 6, Muang Pattaya, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 6",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Sunrise Lounge",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndet7bt00f5lsip2gcqatrk",
+          "slug": "sunrise-lounge",
+          "name": "Sunrise Lounge",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"sunrise\" === \"sunrise\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"sunrise\", \"sunrise\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"sunrise\" contains/in \"sunrise\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Sunrise Lounge\" (score 1.000)",
+      "address": "Soi Rajchawaroon (Soi Kasetsin), Pratumnak Hill, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Pratamnak",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "The Gold Karaoke",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndetaoe00fflsip09intt6f",
+          "slug": "the-gold-karaoke",
+          "name": "The Gold Karaoke",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the gold\" === \"the gold\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the gold\", \"the gold\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the gold\" contains/in \"the gold\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"the-gold-karaoke\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Gold Karaoke\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "After Party Pattaya",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndete4i00fplsipgyat9bui",
+          "slug": "after-party-pattaya",
+          "name": "After Party Pattaya",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"after party\" === \"after party\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"after party\", \"after party\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"after party\" contains/in \"after party\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"after-party-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"After Party Pattaya\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Eriko Japanese Karaoke",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeti0p00fzlsiptu147c0e",
+          "slug": "eriko-japanese-karaoke",
+          "name": "Eriko Japanese Karaoke",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"eriko japanese\" === \"eriko japanese\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"eriko japanese\", \"eriko japanese\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"eriko japanese\" contains/in \"eriko japanese\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"eriko-japanese-karaoke\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Eriko Japanese Karaoke\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Hidden Treasure Bar",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndetlnt00g9lsip83uicrn6",
+          "slug": "hidden-treasure-bar",
+          "name": "Hidden Treasure Bar",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"hidden treasure\" === \"hidden treasure\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"hidden treasure\", \"hidden treasure\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"hidden treasure\" contains/in \"hidden treasure\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Hidden Treasure Bar\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Woodball Pattaya Roof Top Bar & Karaoke",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 0.9842185400806092,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndetoqd00gjlsipxlcy264y",
+          "slug": "woodball-pattaya-roof-top-bar-karaoke",
+          "name": "Woodball Pattaya Roof Top Bar & Karaoke",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"woodball roof top\" === \"woodball roof top\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"woodball roof top\", \"woodball roof top\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"woodball roof top\" contains/in \"woodball roof top\""
+        },
+        {
+          "field": "phone",
+          "score": 1,
+          "detail": "phone 33132288 matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8474458874458874,
+          "detail": "address JW = 0.847"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Woodball Pattaya Roof Top Bar & Karaoke\" (score 0.984)",
+      "address": "94/7 Moo 10, 3rd & 4th Floor, Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": "+66 33-132-288",
+      "website": "https://instagram.com/woodball_pattaya"
+    },
+    {
+      "name": "Crew Bar",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndetrmc00gtlsipikqrb50o",
+          "slug": "crew-bar",
+          "name": "Crew Bar",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"crew\" === \"crew\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"crew\", \"crew\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"crew\" contains/in \"crew\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Crew Bar\" (score 1.000)",
+      "address": "Between Soi Buakhao and New Plaza, Central Pattaya, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Buakhao",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Marmoris Karaoke Jomtien",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndetugr00h1lsipc4mgrlkv",
+          "slug": "marmoris-karaoke-jomtien",
+          "name": "Marmoris Karaoke Jomtien",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"marmoris jomtien\" === \"marmoris jomtien\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"marmoris jomtien\", \"marmoris jomtien\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"marmoris jomtien\" contains/in \"marmoris jomtien\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"marmoris-karaoke-jomtien\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Marmoris Karaoke Jomtien\" (score 1.000)",
+      "address": "Jomtien Beach Road area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Jomtien",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Woodball Pattaya Beach Karaoke",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndetw2k00hblsipojgwrp8w",
+          "slug": "woodball-pattaya-beach-karaoke",
+          "name": "Woodball Pattaya Beach Karaoke",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"woodball beach\" === \"woodball beach\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"woodball beach\", \"woodball beach\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"woodball beach\" contains/in \"woodball beach\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"woodball-pattaya-beach-karaoke\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Woodball Pattaya Beach Karaoke\" (score 1.000)",
+      "address": "Walking Street, Pattaya Beach side, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Planet KTV",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndety7r00hllsipp33wt0hj",
+          "slug": "planet-ktv",
+          "name": "Planet KTV",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"planet\" === \"planet\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"planet\", \"planet\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"planet\" contains/in \"planet\""
+        },
+        {
+          "field": "address",
+          "score": 1,
+          "detail": "address JW = 1.000"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Planet KTV\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "North Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Mr.K Club & KTV",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndetzx400hvlsipbbqfnzee",
+          "slug": "mrk-club-ktv",
+          "name": "Mr.K Club & KTV",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"mrk\" === \"mrk\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"mrk\", \"mrk\") = 1.000"
+        },
+        {
+          "field": "address",
+          "score": 1,
+          "detail": "address JW = 1.000"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Mr.K Club & KTV\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Top Play Lounge Karaoke",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeu3je00i5lsipe0yrusgc",
+          "slug": "top-play-lounge-karaoke",
+          "name": "Top Play Lounge Karaoke",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"top play\" === \"top play\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"top play\", \"top play\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"top play\" contains/in \"top play\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"top-play-lounge-karaoke\" matches"
+        },
+        {
+          "field": "website",
+          "score": 1,
+          "detail": "domain topplaylounge.com matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Top Play Lounge Karaoke\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": "https://www.topplaylounge.com"
+    },
+    {
+      "name": "The Verge Karaoke Lounge",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeu66v00iflsipm93qwmvs",
+          "slug": "the-verge-karaoke-lounge",
+          "name": "The Verge Karaoke Lounge",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the verge\" === \"the verge\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the verge\", \"the verge\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the verge\" contains/in \"the verge\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"the-verge-karaoke-lounge\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Verge Karaoke Lounge\" (score 1.000)",
+      "address": "Royal Cliff Hotels Group, 353 Phra Tamnak Rd, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Pratamnak",
+      "phone": null,
+      "website": "https://www.royalcliff.com/facilities/the-verge/"
+    },
+    {
+      "name": "Hollywood KTV",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeouxo000llsiprijyvhm9",
+          "slug": "hollywood-pattaya",
+          "name": "Hollywood Pattaya",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"hollywood\" === \"hollywood\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"hollywood\", \"hollywood\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"hollywood\" contains/in \"hollywood\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Hollywood Pattaya\" (score 1.000)",
+      "address": "Next to Hollywood Disco parking, North Pattaya, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "North Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Russian Karaoke Pratamnak",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeu95n00izlsipost86824",
+          "slug": "russian-karaoke-pratamnak",
+          "name": "Russian Karaoke Pratamnak",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"russian pratamnak\" === \"russian pratamnak\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"russian pratamnak\", \"russian pratamnak\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"russian pratamnak\" contains/in \"russian pratamnak\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"russian-karaoke-pratamnak\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Russian Karaoke Pratamnak\" (score 1.000)",
+      "address": "Pratamnak Hill area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Pratamnak",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Hidden KTV Soi Bongkot",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 0.9868944061858163,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeucbz00j9lsip0ke3kzz4",
+          "slug": "hidden-ktv-soi-bongkot",
+          "name": "Hidden KTV Soi Bongkot",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"hidden soi bongkot\" === \"hidden soi bongkot\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"hidden soi bongkot\", \"hidden soi bongkot\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"hidden soi bongkot\" contains/in \"hidden soi bongkot\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"hidden-ktv-soi-bongkot\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8645755305867665,
+          "detail": "address JW = 0.865"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Hidden KTV Soi Bongkot\" (score 0.987)",
+      "address": "Soi Bongkot area, South Pattaya, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "South Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Thai BBQ & Karaoke Pattaya Tai",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 0.9837640112946009,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeucnw00jjlsipyjnjzuvs",
+          "slug": "thai-bbq-karaoke-pattaya-tai",
+          "name": "Thai BBQ & Karaoke Pattaya Tai",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"thai bbq tai\" === \"thai bbq tai\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"thai bbq tai\", \"thai bbq tai\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"thai bbq tai\" contains/in \"thai bbq tai\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"thai-bbq-karaoke-pattaya-tai\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8322281167108754,
+          "detail": "address JW = 0.832"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Thai BBQ & Karaoke Pattaya Tai\" (score 0.984)",
+      "address": "Pattaya Tai (South Pattaya Road) opposite Soi 7, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "South Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Yes Bar & Karaoke",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeufgr00jllsipmz1yfiiu",
+          "slug": "yes-bar-karaoke",
+          "name": "Yes Bar & Karaoke",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"yes\" === \"yes\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"yes\", \"yes\") = 1.000"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Yes Bar & Karaoke\" (score 1.000)",
+      "address": "Near Terminal 21, North Pattaya Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "North Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Chinese Luxury KTV Pattaya",
+      "categorySlug": "ktv",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeuiao00jvlsipwdb0nzuc",
+          "slug": "chinese-luxury-ktv-pattaya",
+          "name": "Chinese Luxury KTV Pattaya",
+          "category": "ktv"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"chinese luxury\" === \"chinese luxury\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"chinese luxury\", \"chinese luxury\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"chinese luxury\" contains/in \"chinese luxury\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"chinese-luxury-ktv-pattaya\" matches"
+        },
+        {
+          "field": "address",
+          "score": 1,
+          "detail": "address JW = 1.000"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Chinese Luxury KTV Pattaya\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "The Den Gentlemen's Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeujvs00k5lsipvdnkonx3",
+          "slug": "the-den-gentlemens-club",
+          "name": "The Den Gentlemen's Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the den gentlemens\" === \"the den gentlemens\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the den gentlemens\", \"the den gentlemens\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the den gentlemens\" contains/in \"the den gentlemens\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"the-den-gentlemens-club\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Den Gentlemen's Club\" (score 1.000)",
+      "address": "Soi Chaiyapoon, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Chaiyapoon",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Buzzin Lounge",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeun3n00kblsipa7gcamo1",
+          "slug": "buzzin-lounge",
+          "name": "Buzzin Lounge",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"buzzin\" === \"buzzin\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"buzzin\", \"buzzin\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"buzzin\" contains/in \"buzzin\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Buzzin Lounge\" (score 1.000)",
+      "address": "Soi Chaiyapoon, Central Pattaya, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Chaiyapoon",
+      "phone": null,
+      "website": "https://www.gentsclubs.com/gc"
+    },
+    {
+      "name": "Club Fate",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeuoiw00kllsipndbwuloh",
+          "slug": "club-fate",
+          "name": "Club Fate",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"fate\" === \"fate\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"fate\", \"fate\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"fate\" contains/in \"fate\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Club Fate\" (score 1.000)",
+      "address": "Soi Boomerang, off Soi Buakhao, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Boomerang",
+      "phone": null,
+      "website": "https://www.gentsclubs.com/gc"
+    },
+    {
+      "name": "Free Willy Gents Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeurt900ktlsipg8ig40z3",
+          "slug": "free-willy-gents-club",
+          "name": "Free Willy Gents Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"free willy gents\" === \"free willy gents\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"free willy gents\", \"free willy gents\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"free willy gents\" contains/in \"free willy gents\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"free-willy-gents-club\" matches"
+        },
+        {
+          "field": "website",
+          "score": 1,
+          "detail": "domain gentsclubs.com matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Free Willy Gents Club\" (score 1.000)",
+      "address": "Soi Regional Land (off Third Road), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Regional Land",
+      "phone": null,
+      "website": "https://www.gentsclubs.com/gc"
+    },
+    {
+      "name": "The Badger",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeuv5h00l3lsipftugzbxn",
+          "slug": "the-badger",
+          "name": "The Badger",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the badger\" === \"the badger\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the badger\", \"the badger\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the badger\" contains/in \"the badger\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Badger\" (score 1.000)",
+      "address": "Soi Khao Talo, East Pattaya (Darkside), Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Darkside",
+      "phone": null,
+      "website": "https://www.gentsclubs.com/gc"
+    },
+    {
+      "name": "Brass House Gentlemen's Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeux8700ldlsiprvnjluui",
+          "slug": "brass-house-gentlemens-club",
+          "name": "Brass House Gentlemen's Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"brass house gentlemens\" === \"brass house gentlemens\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"brass house gentlemens\", \"brass house gentlemens\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"brass house gentlemens\" contains/in \"brass house gentlemens\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"brass-house-gentlemens-club\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Brass House Gentlemen's Club\" (score 1.000)",
+      "address": "Jomtien Second Road area, Jomtien, Pattaya City, Chon Buri 20150, Thailand",
+      "district": "Jomtien",
+      "phone": null,
+      "website": "https://www.gentsclubs.com/gc"
+    },
+    {
+      "name": "Webby's Gents Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeuyp900ljlsipt1h93l5r",
+          "slug": "webbys-gents-club",
+          "name": "Webby's Gents Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"webbys gents\" === \"webbys gents\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"webbys gents\", \"webbys gents\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"webbys gents\" contains/in \"webbys gents\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"webbys-gents-club\" matches"
+        },
+        {
+          "field": "website",
+          "score": 1,
+          "detail": "domain gentsclubs.com matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Webby's Gents Club\" (score 1.000)",
+      "address": "Jomtien area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Jomtien",
+      "phone": null,
+      "website": "https://www.gentsclubs.com/gc"
+    },
+    {
+      "name": "The Lake Gentleman Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndev1z200ltlsipdcgvgoce",
+          "slug": "the-lake-gentleman-club",
+          "name": "The Lake Gentleman Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the lake gentleman\" === \"the lake gentleman\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the lake gentleman\", \"the lake gentleman\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the lake gentleman\" contains/in \"the lake gentleman\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"the-lake-gentleman-club\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Lake Gentleman Club\" (score 1.000)",
+      "address": "Map Prachan Lake area, Darkside, Pattaya, Chon Buri 20150, Thailand",
+      "district": "Darkside",
+      "phone": null,
+      "website": "https://www.cheerspattaya.com"
+    },
+    {
+      "name": "Red House for Gentlemen",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndev2xl00m3lsip234bxr64",
+          "slug": "red-house-for-gentlemen",
+          "name": "Red House for Gentlemen",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"red house for gentlemen\" === \"red house for gentlemen\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"red house for gentlemen\", \"red house for gentlemen\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"red house for gentlemen\" contains/in \"red house for gentlemen\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"red-house-for-gentlemen\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Red House for Gentlemen\" (score 1.000)",
+      "address": "Soi Bongkot, South Pattaya, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Bongkot",
+      "phone": null,
+      "website": "https://www.cheerspattaya.com"
+    },
+    {
+      "name": "Passion Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndev6vm00m9lsiph30k8m4h",
+          "slug": "passion-club",
+          "name": "Passion Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"passion\" === \"passion\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"passion\", \"passion\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"passion\" contains/in \"passion\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Passion Club\" (score 1.000)",
+      "address": "Jomtien area, off Thappraya Road, Pattaya City, Chon Buri 20150, Thailand",
+      "district": "Jomtien",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Kinnaree Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndev9ba00mjlsiphq2igwz6",
+          "slug": "kinnaree-club",
+          "name": "Kinnaree Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"kinnaree\" === \"kinnaree\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"kinnaree\", \"kinnaree\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"kinnaree\" contains/in \"kinnaree\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Kinnaree Club\" (score 1.000)",
+      "address": "Jomtien / Pratumnak area, Pattaya City, Chon Buri 20150, Thailand",
+      "district": "Pratamnak",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Kit Cat Lounge Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevczd00mtlsipts3apmk7",
+          "slug": "kit-cat-lounge-club",
+          "name": "Kit Cat Lounge Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"kit cat\" === \"kit cat\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"kit cat\", \"kit cat\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"kit cat\" contains/in \"kit cat\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"kit-cat-lounge-club\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Kit Cat Lounge Club\" (score 1.000)",
+      "address": "Jomtien area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Jomtien",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Bada Bing Gentlemen's Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevekx00n3lsipntr9smn2",
+          "slug": "bada-bing-gentlemens-club",
+          "name": "Bada Bing Gentlemen's Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"bada bing gentlemens\" === \"bada bing gentlemens\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"bada bing gentlemens\", \"bada bing gentlemens\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"bada bing gentlemens\" contains/in \"bada bing gentlemens\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"bada-bing-gentlemens-club\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Bada Bing Gentlemen's Club\" (score 1.000)",
+      "address": "Central Pattaya area, Pattaya City, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Paradise Lounge",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevhho00ndlsipm3g6n1wl",
+          "slug": "paradise-lounge",
+          "name": "Paradise Lounge",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"paradise\" === \"paradise\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"paradise\", \"paradise\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"paradise\" contains/in \"paradise\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Paradise Lounge\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Carre D’Ass Gentlemen's Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevhov00nnlsipdmbep4jh",
+          "slug": "carre-dass-gentlemens-club",
+          "name": "Carre D’Ass Gentlemen's Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"carre dass gentlemens\" === \"carre dass gentlemens\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"carre dass gentlemens\", \"carre dass gentlemens\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"carre dass gentlemens\" contains/in \"carre dass gentlemens\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"carre-dass-gentlemens-club\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Carre D’Ass Gentlemen's Club\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Maggie Mays Resort",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevknv00nplsipdggpt2qe",
+          "slug": "maggie-mays-resort",
+          "name": "Maggie Mays Resort",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"maggie mays resort\" === \"maggie mays resort\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"maggie mays resort\", \"maggie mays resort\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"maggie mays resort\" contains/in \"maggie mays resort\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Maggie Mays Resort\" (score 1.000)",
+      "address": "Jomtien, near fishing park, Pattaya City, Chon Buri 20150, Thailand",
+      "district": "Jomtien",
+      "phone": null,
+      "website": "https://book-directonline.com/properties/maggiemaysresort"
+    },
+    {
+      "name": "Maggie Mays Pattaya",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevljl00nzlsipzufypm2t",
+          "slug": "maggie-mays-pattaya",
+          "name": "Maggie Mays Pattaya",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"maggie mays\" === \"maggie mays\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"maggie mays\", \"maggie mays\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"maggie mays\" contains/in \"maggie mays\""
+        },
+        {
+          "field": "website",
+          "score": 1,
+          "detail": "domain gentsclubs.com matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Maggie Mays Pattaya\" (score 1.000)",
+      "address": "Soi Chaiyapoon area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Chaiyapoon",
+      "phone": null,
+      "website": "https://www.gentsclubs.com/gc"
+    },
+    {
+      "name": "Bradleys Restaurant & Bar",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevlso00o3lsipgee9m1rq",
+          "slug": "bradleys-restaurant-bar",
+          "name": "Bradleys Restaurant & Bar",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"bradleys restaurant\" === \"bradleys restaurant\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"bradleys restaurant\", \"bradleys restaurant\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"bradleys restaurant\" contains/in \"bradleys restaurant\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Bradleys Restaurant & Bar\" (score 1.000)",
+      "address": "Soi Pothole (Darkside), East Pattaya, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Darkside",
+      "phone": null,
+      "website": "https://www.gentsclubs.com/gc"
+    },
+    {
+      "name": "Purple Gentlemen Club",
+      "categorySlug": "gentlemans-club",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevmo200o5lsip0a1ilrhu",
+          "slug": "purple-gentlemen-club",
+          "name": "Purple Gentlemen Club",
+          "category": "gentlemans-club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"purple gentlemen\" === \"purple gentlemen\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"purple gentlemen\", \"purple gentlemen\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"purple gentlemen\" contains/in \"purple gentlemen\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"purple-gentlemen-club\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Purple Gentlemen Club\" (score 1.000)",
+      "address": "Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "XS A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevo7c00o7lsipze8lub4d",
+          "slug": "xs-a-go-go",
+          "name": "XS A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"xs a go go\" === \"xs a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"xs a go go\", \"xs a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"xs a go go\" contains/in \"xs a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"xs-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"XS A Go Go\" (score 1.000)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Pin Up A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.9587179487179487,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnd1xnl70047lshtd4cug0uz",
+          "slug": "pin-up-a-go-go",
+          "name": "Pin-Up A GO GO",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "fuzzyName",
+          "score": 0.9115384615384615,
+          "detail": "JW(\"pin up a go go\", \"pinup a go go\") = 0.912"
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"pin-up-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Pin-Up A GO GO\" (score 0.959)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Sapphire Club",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnd1yhj3007jlshtire2afv8",
+          "slug": "sapphire-club",
+          "name": "Sapphire Club",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"sapphire\" === \"sapphire\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"sapphire\", \"sapphire\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"sapphire\" contains/in \"sapphire\""
+        },
+        {
+          "field": "website",
+          "score": 1,
+          "detail": "domain sapphirepattaya.com matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Sapphire Club\" (score 1.000)",
+      "address": "Soi 15, off Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": "https://sapphirepattaya.com/welcome/"
+    },
+    {
+      "name": "Windmill Club",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevqkz00ohlsiprgyjncjm",
+          "slug": "windmill-club",
+          "name": "Windmill Club",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"windmill\" === \"windmill\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"windmill\", \"windmill\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"windmill\" contains/in \"windmill\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Windmill Club\" (score 1.000)",
+      "address": "Soi Diamond, off Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Skyfall Agogo",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevs2900orlsipy6ebwvsn",
+          "slug": "skyfall-agogo",
+          "name": "Skyfall Agogo",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"skyfall agogo\" === \"skyfall agogo\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"skyfall agogo\", \"skyfall agogo\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"skyfall agogo\" contains/in \"skyfall agogo\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"skyfall-agogo\" matches"
+        },
+        {
+          "field": "website",
+          "score": 1,
+          "detail": "domain facebook.com matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Skyfall Agogo\" (score 1.000)",
+      "address": "Top end of Walking Street, 50m from Beach Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": "https://www.facebook.com/SkyfallAgogo/"
+    },
+    {
+      "name": "Palace A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnd1xsz1004rlshtni9qqaw4",
+          "slug": "palace-a-go-go",
+          "name": "Palace A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"palace a go go\" === \"palace a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"palace a go go\", \"palace a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"palace a go go\" contains/in \"palace a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"palace-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Palace A Go Go\" (score 1.000)",
+      "address": "Center of Walking Street, opposite Lucifer, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Shark A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqcyy005tlsipquk72tse",
+          "slug": "shark-club-a-go-go",
+          "name": "Shark Club A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"shark a go go\" === \"shark a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"shark a go go\", \"shark a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"shark a go go\" contains/in \"shark a go go\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Shark Club A Go Go\" (score 1.000)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Sugar Baby Agogo",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevv7800pblsip9uvxk72r",
+          "slug": "sugar-baby-agogo",
+          "name": "Sugar Baby Agogo",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"sugar baby agogo\" === \"sugar baby agogo\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"sugar baby agogo\", \"sugar baby agogo\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"sugar baby agogo\" contains/in \"sugar baby agogo\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"sugar-baby-agogo\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Sugar Baby Agogo\" (score 1.000)",
+      "address": "Walking Street, near Soi Diamond, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Peppermint Club",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.9806273786183832,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevwqt00pllsipm9ulztc3",
+          "slug": "peppermint-club",
+          "name": "Peppermint Club",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"peppermint\" === \"peppermint\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"peppermint\", \"peppermint\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"peppermint\" contains/in \"peppermint\""
+        },
+        {
+          "field": "address",
+          "score": 0.8514765694076039,
+          "detail": "address JW = 0.851"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Peppermint Club\" (score 0.981)",
+      "address": "Walking Street, central strip, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Lighthouse Agogo",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.9839180450361327,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevxur00pvlsip9l49iez7",
+          "slug": "lighthouse-agogo",
+          "name": "Lighthouse Agogo",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"lighthouse agogo\" === \"lighthouse agogo\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"lighthouse agogo\", \"lighthouse agogo\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"lighthouse agogo\" contains/in \"lighthouse agogo\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"lighthouse-agogo\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8338197987067044,
+          "detail": "address JW = 0.834"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Lighthouse Agogo\" (score 0.984)",
+      "address": "Walking Street, close to Beach Road end, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Club Electric Blue",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeq92h0059lsip7u4e3gps",
+          "slug": "club-electric-blue",
+          "name": "Club Electric Blue",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"electric blue\" === \"electric blue\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"electric blue\", \"electric blue\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"electric blue\" contains/in \"electric blue\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Club Electric Blue\" (score 1.000)",
+      "address": "Near Katoeys Are Us, Soi Diamond / Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Tantra A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.9848669072862621,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqvrq007hlsip29qw4gsu",
+          "slug": "tantra-a-go-go",
+          "name": "Tantra A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"tantra a go go\" === \"tantra a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"tantra a go go\", \"tantra a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"tantra a go go\" contains/in \"tantra a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"tantra-a-go-go\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8436247086247086,
+          "detail": "address JW = 0.844"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Tantra A Go Go\" (score 0.985)",
+      "address": "Walking Street, middle section, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "One Night Jack",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndevzcf00pzlsipipufj4cm",
+          "slug": "one-night-jack",
+          "name": "One Night Jack",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"one night jack\" === \"one night jack\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"one night jack\", \"one night jack\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"one night jack\" contains/in \"one night jack\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"One Night Jack\" (score 1.000)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Glass House Agogo",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 0.9845061014990314,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndew0ug00q9lsipkrez8i6z",
+          "slug": "glass-house-agogo",
+          "name": "Glass House Agogo",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"glass house agogo\" === \"glass house agogo\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"glass house agogo\", \"glass house agogo\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"glass house agogo\" contains/in \"glass house agogo\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"glass-house-agogo\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8398963821566562,
+          "detail": "address JW = 0.840"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Glass House Agogo\" (score 0.985)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Ka Boom A Go Go",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqhpj006dlsipfeuri5nd",
+          "slug": "ka-boom-a-go-go",
+          "name": "Ka Boom A Go Go",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"ka boom a go go\" === \"ka boom a go go\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"ka boom a go go\", \"ka boom a go go\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"ka boom a go go\" contains/in \"ka boom a go go\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"ka-boom-a-go-go\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Ka Boom A Go Go\" (score 1.000)",
+      "address": "Walking Street (ex Rich/Mandarin), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "PH 3.9 Agogo",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndew2c400qjlsiputn7hohi",
+          "slug": "ph-39-agogo",
+          "name": "PH 3.9 Agogo",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"ph 39 agogo\" === \"ph 39 agogo\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"ph 39 agogo\", \"ph 39 agogo\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"ph 39 agogo\" contains/in \"ph 39 agogo\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"PH 3.9 Agogo\" (score 1.000)",
+      "address": "Walking Street (ex Moon), Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Iron Club",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndeqf3b0063lsipm8iy6imn",
+          "slug": "iron-club",
+          "name": "Iron Club",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"iron\" === \"iron\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"iron\", \"iron\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"iron\" contains/in \"iron\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Iron Club\" (score 1.000)",
+      "address": "Walking Street, near central section, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Queen Club LK Metro",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnder9i60097lsipi7ug1vzl",
+          "slug": "queen-club-lk-metro",
+          "name": "Queen Club LK Metro",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"queen lk metro\" === \"queen lk metro\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"queen lk metro\", \"queen lk metro\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"queen lk metro\" contains/in \"queen lk metro\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"queen-club-lk-metro\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Queen Club LK Metro\" (score 1.000)",
+      "address": "Soi LK Metro, off Soi Diana, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "LK Metro",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Champagne Agogo LK Metro",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndercqa009hlsip2zeaneng",
+          "slug": "champagne-agogo-lk-metro",
+          "name": "Champagne Agogo LK Metro",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"champagne agogo lk metro\" === \"champagne agogo lk metro\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"champagne agogo lk metro\", \"champagne agogo lk metro\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"champagne agogo lk metro\" contains/in \"champagne agogo lk metro\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"champagne-agogo-lk-metro\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Champagne Agogo LK Metro\" (score 1.000)",
+      "address": "Soi LK Metro, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "LK Metro",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Sugar Sugar Agogo",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndergno009rlsipcpg5c9b6",
+          "slug": "sugar-sugar-agogo",
+          "name": "Sugar Sugar Agogo",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"sugar sugar agogo\" === \"sugar sugar agogo\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"sugar sugar agogo\", \"sugar sugar agogo\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"sugar sugar agogo\" contains/in \"sugar sugar agogo\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Sugar Sugar Agogo\" (score 1.000)",
+      "address": "Soi LK Metro, near Soi Diana entrance, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "LK Metro",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Top Gun Agogo",
+      "categorySlug": "gogo-bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnderkcj00a1lsipz9g5gky4",
+          "slug": "top-gun-agogo",
+          "name": "Top Gun Agogo",
+          "category": "gogo-bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"top gun agogo\" === \"top gun agogo\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"top gun agogo\", \"top gun agogo\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"top gun agogo\" contains/in \"top gun agogo\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Top Gun Agogo\" (score 1.000)",
+      "address": "Soi LK Metro, Soi Buakhao area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "LK Metro",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Pattaya Beer Garden",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmnd1t5z2000blshtdfgfnoog",
+          "slug": "pattaya-beer-garden",
+          "name": "Pattaya Beer Garden",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"beer garden\" === \"beer garden\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"beer garden\", \"beer garden\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"beer garden\" contains/in \"beer garden\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"pattaya-beer-garden\" matches"
+        },
+        {
+          "field": "website",
+          "score": 1,
+          "detail": "domain pattayabeergarden.com matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Pattaya Beer Garden\" (score 1.000)",
+      "address": "Beach Road entrance to Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Beach Road",
+      "phone": null,
+      "website": "http://www.pattayabeergarden.com"
+    },
+    {
+      "name": "Bamboo Bar Pattayatai",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndew5gi00qtlsipc2808udu",
+          "slug": "bamboo-bar-pattayatai",
+          "name": "Bamboo Bar Pattayatai",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"bamboo pattayatai\" === \"bamboo pattayatai\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"bamboo pattayatai\", \"bamboo pattayatai\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"bamboo pattayatai\" contains/in \"bamboo pattayatai\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"bamboo-bar-pattayatai\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Bamboo Bar Pattayatai\" (score 1.000)",
+      "address": "Pattaya Tai Road near Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "South Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "The Stones House",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndep2dp001flsipzvx5ouv1",
+          "slug": "the-stones-house",
+          "name": "The Stones House",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the stones house\" === \"the stones house\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the stones house\", \"the stones house\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the stones house\" contains/in \"the stones house\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"the-stones-house\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Stones House\" (score 1.000)",
+      "address": "Walking Street, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "The Blues Factory",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndew6fv00r3lsipngr9b3zc",
+          "slug": "the-blues-factory",
+          "name": "The Blues Factory",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"the blues factory\" === \"the blues factory\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"the blues factory\", \"the blues factory\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"the blues factory\" contains/in \"the blues factory\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"the-blues-factory\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"The Blues Factory\" (score 1.000)",
+      "address": "Walking Street area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Candy Shop Walking Street",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 0.9848823479079318,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndew7yg00r5lsipfewlffbu",
+          "slug": "candy-shop-walking-street",
+          "name": "Candy Shop Walking Street",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"candy shop walking street\" === \"candy shop walking street\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"candy shop walking street\", \"candy shop walking street\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"candy shop walking street\" contains/in \"candy shop walking street\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"candy-shop-walking-street\" matches"
+        },
+        {
+          "field": "address",
+          "score": 0.8437842617152962,
+          "detail": "address JW = 0.844"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Candy Shop Walking Street\" (score 0.985)",
+      "address": "Walking Street, seafront side, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Lucky 7 Bar",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndewb7w00rflsipd5ropk1c",
+          "slug": "lucky-7-bar",
+          "name": "Lucky 7 Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"lucky 7\" === \"lucky 7\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"lucky 7\", \"lucky 7\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"lucky 7\" contains/in \"lucky 7\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Lucky 7 Bar\" (score 1.000)",
+      "address": "WVJM+HXP, Pattaya, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Sky Music Live Bar",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndewe4j00rplsipf14z2hn7",
+          "slug": "sky-music-live-bar",
+          "name": "Sky Music Live Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"sky music live\" === \"sky music live\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"sky music live\", \"sky music live\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"sky music live\" contains/in \"sky music live\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Sky Music Live Bar\" (score 1.000)",
+      "address": "Soi 7, Beach Road side, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 7",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Naughty Bar Soi 7",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndewfw100rzlsipnhvthkup",
+          "slug": "naughty-bar-soi-7",
+          "name": "Naughty Bar Soi 7",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"naughty soi 7\" === \"naughty soi 7\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"naughty soi 7\", \"naughty soi 7\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"naughty soi 7\" contains/in \"naughty soi 7\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"naughty-bar-soi-7\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Naughty Bar Soi 7\" (score 1.000)",
+      "address": "Soi 7, off Beach Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 7",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Jameson’s Irish Pub",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndewjue00s9lsip2e2yhy9q",
+          "slug": "jamesons-irish-pub",
+          "name": "Jameson’s Irish Pub",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"jamesons irish\" === \"jamesons irish\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"jamesons irish\", \"jamesons irish\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"jamesons irish\" contains/in \"jamesons irish\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Jameson’s Irish Pub\" (score 1.000)",
+      "address": "Soi 7/8 area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 7/8",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Crazy House Pub & Bar",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndewnpx00sjlsipyscj1sfl",
+          "slug": "crazy-house-pub-bar",
+          "name": "Crazy House Pub & Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"crazy house\" === \"crazy house\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"crazy house\", \"crazy house\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"crazy house\" contains/in \"crazy house\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"crazy-house-pub-bar\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Crazy House Pub & Bar\" (score 1.000)",
+      "address": "Soi 7, central section, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 7",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Rock Factory",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndewqme00stlsip14wxnm3x",
+          "slug": "rock-factory",
+          "name": "Rock Factory",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"rock factory\" === \"rock factory\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"rock factory\", \"rock factory\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"rock factory\" contains/in \"rock factory\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Rock Factory\" (score 1.000)",
+      "address": "Central Pattaya, likely Soi 7/8 area, Pattaya City, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Candy Bar Tree Town",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndews7000t3lsip4kyispu1",
+          "slug": "candy-bar-tree-town",
+          "name": "Candy Bar Tree Town",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"candy tree town\" === \"candy tree town\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"candy tree town\", \"candy tree town\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"candy tree town\" contains/in \"candy tree town\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"candy-bar-tree-town\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Candy Bar Tree Town\" (score 1.000)",
+      "address": "Tree Town, Soi Buakhao, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Buakhao",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Trench Town Rasta Bar",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndewvbv00tdlsip529fmrh8",
+          "slug": "trench-town-rasta-bar",
+          "name": "Trench Town Rasta Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"trench town rasta\" === \"trench town rasta\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"trench town rasta\", \"trench town rasta\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"trench town rasta\" contains/in \"trench town rasta\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Trench Town Rasta Bar\" (score 1.000)",
+      "address": "Soi Buakhao, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Buakhao",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Las Vegas Beer Garden",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndewyhj00tnlsipd17q5ye5",
+          "slug": "las-vegas-beer-garden",
+          "name": "Las Vegas Beer Garden",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"las vegas beer garden\" === \"las vegas beer garden\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"las vegas beer garden\", \"las vegas beer garden\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"las vegas beer garden\" contains/in \"las vegas beer garden\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Las Vegas Beer Garden\" (score 1.000)",
+      "address": "Soi Diana, off Second Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi Diana",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Triangle Bar",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndex1fo00txlsipfq0j9axn",
+          "slug": "triangle-bar",
+          "name": "Triangle Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"triangle\" === \"triangle\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"triangle\", \"triangle\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"triangle\" contains/in \"triangle\""
+        }
+      ],
+      "reason": "High confidence duplicate of \"Triangle Bar\" (score 1.000)",
+      "address": "Soi Pothole, East Pattaya, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Darkside",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Havana Bar Pattaya",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndex52q00u7lsips83gi8ft",
+          "slug": "havana-bar-pattaya",
+          "name": "Havana Bar Pattaya",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"havana\" === \"havana\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"havana\", \"havana\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"havana\" contains/in \"havana\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"havana-bar-pattaya\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Havana Bar Pattaya\" (score 1.000)",
+      "address": "Holiday Inn Pattaya, 463/68 Pattaya Sai 1 Road, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Beach Road",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Wizard Brewery & Bar",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndex7dr00uhlsipie57r0f7",
+          "slug": "wizard-brewery-bar",
+          "name": "Wizard Brewery & Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"wizard brewery\" === \"wizard brewery\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"wizard brewery\", \"wizard brewery\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"wizard brewery\" contains/in \"wizard brewery\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"wizard-brewery-bar\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Wizard Brewery & Bar\" (score 1.000)",
+      "address": "Central Pattaya area, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Central Pattaya",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Lucifer Music Café (Bar)",
+      "categorySlug": "bar",
+      "classification": "duplicate",
+      "score": 1,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndexaa300urlsip023r0swp",
+          "slug": "lucifer-music-cafe-bar",
+          "name": "Lucifer Music Café (Bar)",
+          "category": "club"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "exactName",
+          "score": 1,
+          "detail": "\"lucifer music\" === \"lucifer music\""
+        },
+        {
+          "field": "fuzzyName",
+          "score": 1,
+          "detail": "JW(\"lucifer music\", \"lucifer music\") = 1.000"
+        },
+        {
+          "field": "nameContains",
+          "score": 1,
+          "detail": "\"lucifer music\" contains/in \"lucifer music\""
+        },
+        {
+          "field": "slugMatch",
+          "score": 1,
+          "detail": "slug \"lucifer-music-cafe-bar\" matches"
+        }
+      ],
+      "reason": "High confidence duplicate of \"Lucifer Music Café (Bar)\" (score 1.000)",
+      "address": "Walking Street, opposite Stones House, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Walking Street",
+      "phone": null,
+      "website": null
+    },
+    {
+      "name": "Sky Music Beach Entry Bar",
+      "categorySlug": "bar",
+      "classification": "needs_review",
+      "score": 0.4022222222222222,
+      "bestMatch": {
+        "venue": {
+          "id": "cmndewe4j00rplsipf14z2hn7",
+          "slug": "sky-music-live-bar",
+          "name": "Sky Music Live Bar",
+          "category": "bar"
+        }
+      },
+      "matchDetails": [
+        {
+          "field": "fuzzyName",
+          "score": 0.8619047619047618,
+          "detail": "JW(\"sky music beach entry\", \"sky music live\") = 0.862"
+        }
+      ],
+      "reason": "Weak signals matching \"Sky Music Live Bar\" (score 0.402) — review recommended",
+      "address": "Beach Road, entrance of Soi 7, Pattaya City, Bang Lamung District, Chon Buri 20150, Thailand",
+      "district": "Soi 7",
+      "phone": null,
+      "website": null
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Differ Pub Pattaya",
+      "reason": "High confidence duplicate of \"Differ Pub Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Flexx Club Pattaya",
+      "reason": "High confidence duplicate of \"Flexx Club Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Hollywood Pattaya",
+      "reason": "High confidence duplicate of \"Hollywood Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Candy Shop Pattaya",
+      "reason": "High confidence duplicate of \"Candy Shop Pattaya\" (score 0.985)",
+      "score": 0.9845061014990314
+    },
+    {
+      "name": "Marine Disco",
+      "reason": "Weak signals matching \"Mari-Jari Sauna and Spa\" (score 0.366) — review recommended",
+      "score": 0.36620370370370364
+    },
+    {
+      "name": "Club Panda",
+      "reason": "High confidence duplicate of \"Club Panda\" (score 0.979)",
+      "score": 0.9787697963821412
+    },
+    {
+      "name": "The Stones House",
+      "reason": "High confidence duplicate of \"The Stones House\" (score 0.983)",
+      "score": 0.9829606945753131
+    },
+    {
+      "name": "The Pier Nightclub",
+      "reason": "High confidence duplicate of \"The Pier Nightclub\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Tunnel Club Pattaya",
+      "reason": "High confidence duplicate of \"Tunnel Club Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "The Burj Club Pattaya",
+      "reason": "High confidence duplicate of \"The Burj Club Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Sun's Club",
+      "reason": "High confidence duplicate of \"Sun's Club\" (score 0.980)",
+      "score": 0.979501911132346
+    },
+    {
+      "name": "Boho Club Pattaya",
+      "reason": "High confidence duplicate of \"Boho Club Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "The Duck Club Pattaya",
+      "reason": "High confidence duplicate of \"The Duck Club Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Glam Pattaya",
+      "reason": "High confidence duplicate of \"Glam Pattaya\" (score 0.979)",
+      "score": 0.979116919411738
+    },
+    {
+      "name": "Shimmers Nightclub",
+      "reason": "Weak signals matching \"The Pier Nightclub\" (score 0.375) — review recommended",
+      "score": 0.3753086419753086
+    },
+    {
+      "name": "6 Eleven Bar",
+      "reason": "High confidence duplicate of \"6 Eleven Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Atlantis Club Pattaya",
+      "reason": "High confidence duplicate of \"Atlantis Club Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Lighthouse Club Pattaya",
+      "reason": "High confidence duplicate of \"Lighthouse Club Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Skyfall Club Pattaya",
+      "reason": "High confidence duplicate of \"Skyfall Club Pattaya\" (score 0.985)",
+      "score": 0.9845061014990314
+    },
+    {
+      "name": "One Night Jack Pattaya",
+      "reason": "High confidence duplicate of \"One Night Jack\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Palace A Go Go",
+      "reason": "High confidence duplicate of \"Palace A Go Go\" (score 0.984)",
+      "score": 0.9837661763014626
+    },
+    {
+      "name": "Fahrenheit A Go Go",
+      "reason": "High confidence duplicate of \"Fahrenheit A Go Go\" (score 0.986)",
+      "score": 0.985559789672693
+    },
+    {
+      "name": "Club Electric Blue",
+      "reason": "High confidence duplicate of \"Club Electric Blue\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Sensations A Go Go",
+      "reason": "High confidence duplicate of \"Sensations A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Shark Club A Go Go",
+      "reason": "High confidence duplicate of \"Shark Club A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Iron Club",
+      "reason": "High confidence duplicate of \"Iron Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Ka Boom A Go Go",
+      "reason": "High confidence duplicate of \"Ka Boom A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "PH 3.9 A Go Go",
+      "reason": "High confidence duplicate of \"PH 3.9 A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Glass House A Go Go",
+      "reason": "High confidence duplicate of \"Glass House A Go Go\" (score 0.985)",
+      "score": 0.9845061014990314
+    },
+    {
+      "name": "Coco A Go Go",
+      "reason": "High confidence duplicate of \"Coco A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Tantra A Go Go",
+      "reason": "High confidence duplicate of \"Tantra A Go Go\" (score 0.985)",
+      "score": 0.9845143636167479
+    },
+    {
+      "name": "Bliss A Go Go",
+      "reason": "High confidence duplicate of \"Bliss A Go Go\" (score 0.985)",
+      "score": 0.985015790660952
+    },
+    {
+      "name": "Mamasan Club",
+      "reason": "High confidence duplicate of \"Mamasan Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Peppermint A Go Go",
+      "reason": "High confidence duplicate of \"Peppermint A Go Go\" (score 0.984)",
+      "score": 0.9836559139784947
+    },
+    {
+      "name": "Alice A Go Go",
+      "reason": "High confidence duplicate of \"Alice A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Cupido Club",
+      "reason": "High confidence duplicate of \"Cupido Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Candy Club A Go Go",
+      "reason": "High confidence duplicate of \"Candy Club A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Queen Club LK Metro",
+      "reason": "High confidence duplicate of \"Queen Club LK Metro\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Champagne Agogo LK Metro",
+      "reason": "High confidence duplicate of \"Champagne Agogo LK Metro\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Sugar Sugar Agogo",
+      "reason": "High confidence duplicate of \"Sugar Sugar Agogo\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Top Gun Agogo",
+      "reason": "High confidence duplicate of \"Top Gun Agogo\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Lolitas",
+      "reason": "Possible duplicate of \"Lita Bar\" (score 0.607) — NEEDS HUMAN REVIEW",
+      "score": 0.6066666666666666
+    },
+    {
+      "name": "Kittens Bar",
+      "reason": "High confidence duplicate of \"Kittens Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Pump Station 1",
+      "reason": "High confidence duplicate of \"Pump Station 1\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Pump Station 2",
+      "reason": "High confidence duplicate of \"Pump Station 2\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Billion Beer Bar",
+      "reason": "High confidence duplicate of \"Billion Beer Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Club 4",
+      "reason": "High confidence duplicate of \"Club 4\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Pirates Hostess Club",
+      "reason": "High confidence duplicate of \"Pirates Hostess Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "King’s Club",
+      "reason": "High confidence duplicate of \"King’s Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Click Bar (Lick Bar)",
+      "reason": "High confidence duplicate of \"Click Bar (Lick Bar)\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "My Friend You Bar",
+      "reason": "High confidence duplicate of \"My Friend You Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Full Moon Bar",
+      "reason": "High confidence duplicate of \"Full Moon Bar\" (score 0.979)",
+      "score": 0.9787825475017593
+    },
+    {
+      "name": "Hunny Lounge",
+      "reason": "High confidence duplicate of \"Hunny Lounge\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Lips Lounge",
+      "reason": "High confidence duplicate of \"Lips Lounge\" (score 0.980)",
+      "score": 0.9798221203412637
+    },
+    {
+      "name": "Bada Bing",
+      "reason": "High confidence duplicate of \"Bada Bing\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Good Fellas Bar",
+      "reason": "High confidence duplicate of \"Good Fellas Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Green Bike Bar",
+      "reason": "High confidence duplicate of \"Green Bike Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Bunny Bar",
+      "reason": "High confidence duplicate of \"Bunny Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Lovers Lane",
+      "reason": "High confidence duplicate of \"Lovers Lane\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Route 69",
+      "reason": "High confidence duplicate of \"Route 69\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Red Point",
+      "reason": "High confidence duplicate of \"Red Point\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Sunrise Lounge",
+      "reason": "High confidence duplicate of \"Sunrise Lounge\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "The Gold Karaoke",
+      "reason": "High confidence duplicate of \"The Gold Karaoke\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "After Party Pattaya",
+      "reason": "High confidence duplicate of \"After Party Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Eriko Japanese Karaoke",
+      "reason": "High confidence duplicate of \"Eriko Japanese Karaoke\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Hidden Treasure Bar",
+      "reason": "High confidence duplicate of \"Hidden Treasure Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Woodball Pattaya Roof Top Bar & Karaoke",
+      "reason": "High confidence duplicate of \"Woodball Pattaya Roof Top Bar & Karaoke\" (score 0.984)",
+      "score": 0.9842185400806092
+    },
+    {
+      "name": "Crew Bar",
+      "reason": "High confidence duplicate of \"Crew Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Marmoris Karaoke Jomtien",
+      "reason": "High confidence duplicate of \"Marmoris Karaoke Jomtien\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Woodball Pattaya Beach Karaoke",
+      "reason": "High confidence duplicate of \"Woodball Pattaya Beach Karaoke\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Planet KTV",
+      "reason": "High confidence duplicate of \"Planet KTV\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Mr.K Club & KTV",
+      "reason": "High confidence duplicate of \"Mr.K Club & KTV\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Top Play Lounge Karaoke",
+      "reason": "High confidence duplicate of \"Top Play Lounge Karaoke\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "The Verge Karaoke Lounge",
+      "reason": "High confidence duplicate of \"The Verge Karaoke Lounge\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Hollywood KTV",
+      "reason": "High confidence duplicate of \"Hollywood Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Russian Karaoke Pratamnak",
+      "reason": "High confidence duplicate of \"Russian Karaoke Pratamnak\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Hidden KTV Soi Bongkot",
+      "reason": "High confidence duplicate of \"Hidden KTV Soi Bongkot\" (score 0.987)",
+      "score": 0.9868944061858163
+    },
+    {
+      "name": "Thai BBQ & Karaoke Pattaya Tai",
+      "reason": "High confidence duplicate of \"Thai BBQ & Karaoke Pattaya Tai\" (score 0.984)",
+      "score": 0.9837640112946009
+    },
+    {
+      "name": "Yes Bar & Karaoke",
+      "reason": "High confidence duplicate of \"Yes Bar & Karaoke\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Chinese Luxury KTV Pattaya",
+      "reason": "High confidence duplicate of \"Chinese Luxury KTV Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "The Den Gentlemen's Club",
+      "reason": "High confidence duplicate of \"The Den Gentlemen's Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Buzzin Lounge",
+      "reason": "High confidence duplicate of \"Buzzin Lounge\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Club Fate",
+      "reason": "High confidence duplicate of \"Club Fate\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Free Willy Gents Club",
+      "reason": "High confidence duplicate of \"Free Willy Gents Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "The Badger",
+      "reason": "High confidence duplicate of \"The Badger\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Brass House Gentlemen's Club",
+      "reason": "High confidence duplicate of \"Brass House Gentlemen's Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Webby's Gents Club",
+      "reason": "High confidence duplicate of \"Webby's Gents Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "The Lake Gentleman Club",
+      "reason": "High confidence duplicate of \"The Lake Gentleman Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Red House for Gentlemen",
+      "reason": "High confidence duplicate of \"Red House for Gentlemen\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Passion Club",
+      "reason": "High confidence duplicate of \"Passion Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Kinnaree Club",
+      "reason": "High confidence duplicate of \"Kinnaree Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Kit Cat Lounge Club",
+      "reason": "High confidence duplicate of \"Kit Cat Lounge Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Bada Bing Gentlemen's Club",
+      "reason": "High confidence duplicate of \"Bada Bing Gentlemen's Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Paradise Lounge",
+      "reason": "High confidence duplicate of \"Paradise Lounge\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Carre D’Ass Gentlemen's Club",
+      "reason": "High confidence duplicate of \"Carre D’Ass Gentlemen's Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Maggie Mays Resort",
+      "reason": "High confidence duplicate of \"Maggie Mays Resort\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Maggie Mays Pattaya",
+      "reason": "High confidence duplicate of \"Maggie Mays Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Bradleys Restaurant & Bar",
+      "reason": "High confidence duplicate of \"Bradleys Restaurant & Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Purple Gentlemen Club",
+      "reason": "High confidence duplicate of \"Purple Gentlemen Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "XS A Go Go",
+      "reason": "High confidence duplicate of \"XS A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Pin Up A Go Go",
+      "reason": "High confidence duplicate of \"Pin-Up A GO GO\" (score 0.959)",
+      "score": 0.9587179487179487
+    },
+    {
+      "name": "Sapphire Club",
+      "reason": "High confidence duplicate of \"Sapphire Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Windmill Club",
+      "reason": "High confidence duplicate of \"Windmill Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Skyfall Agogo",
+      "reason": "High confidence duplicate of \"Skyfall Agogo\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Palace A Go Go",
+      "reason": "High confidence duplicate of \"Palace A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Shark A Go Go",
+      "reason": "High confidence duplicate of \"Shark Club A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Sugar Baby Agogo",
+      "reason": "High confidence duplicate of \"Sugar Baby Agogo\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Peppermint Club",
+      "reason": "High confidence duplicate of \"Peppermint Club\" (score 0.981)",
+      "score": 0.9806273786183832
+    },
+    {
+      "name": "Lighthouse Agogo",
+      "reason": "High confidence duplicate of \"Lighthouse Agogo\" (score 0.984)",
+      "score": 0.9839180450361327
+    },
+    {
+      "name": "Club Electric Blue",
+      "reason": "High confidence duplicate of \"Club Electric Blue\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Tantra A Go Go",
+      "reason": "High confidence duplicate of \"Tantra A Go Go\" (score 0.985)",
+      "score": 0.9848669072862621
+    },
+    {
+      "name": "One Night Jack",
+      "reason": "High confidence duplicate of \"One Night Jack\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Glass House Agogo",
+      "reason": "High confidence duplicate of \"Glass House Agogo\" (score 0.985)",
+      "score": 0.9845061014990314
+    },
+    {
+      "name": "Ka Boom A Go Go",
+      "reason": "High confidence duplicate of \"Ka Boom A Go Go\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "PH 3.9 Agogo",
+      "reason": "High confidence duplicate of \"PH 3.9 Agogo\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Iron Club",
+      "reason": "High confidence duplicate of \"Iron Club\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Queen Club LK Metro",
+      "reason": "High confidence duplicate of \"Queen Club LK Metro\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Champagne Agogo LK Metro",
+      "reason": "High confidence duplicate of \"Champagne Agogo LK Metro\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Sugar Sugar Agogo",
+      "reason": "High confidence duplicate of \"Sugar Sugar Agogo\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Top Gun Agogo",
+      "reason": "High confidence duplicate of \"Top Gun Agogo\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Pattaya Beer Garden",
+      "reason": "High confidence duplicate of \"Pattaya Beer Garden\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Bamboo Bar Pattayatai",
+      "reason": "High confidence duplicate of \"Bamboo Bar Pattayatai\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "The Stones House",
+      "reason": "High confidence duplicate of \"The Stones House\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "The Blues Factory",
+      "reason": "High confidence duplicate of \"The Blues Factory\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Candy Shop Walking Street",
+      "reason": "High confidence duplicate of \"Candy Shop Walking Street\" (score 0.985)",
+      "score": 0.9848823479079318
+    },
+    {
+      "name": "Lucky 7 Bar",
+      "reason": "High confidence duplicate of \"Lucky 7 Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Sky Music Live Bar",
+      "reason": "High confidence duplicate of \"Sky Music Live Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Naughty Bar Soi 7",
+      "reason": "High confidence duplicate of \"Naughty Bar Soi 7\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Jameson’s Irish Pub",
+      "reason": "High confidence duplicate of \"Jameson’s Irish Pub\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Crazy House Pub & Bar",
+      "reason": "High confidence duplicate of \"Crazy House Pub & Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Rock Factory",
+      "reason": "High confidence duplicate of \"Rock Factory\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Candy Bar Tree Town",
+      "reason": "High confidence duplicate of \"Candy Bar Tree Town\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Trench Town Rasta Bar",
+      "reason": "High confidence duplicate of \"Trench Town Rasta Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Las Vegas Beer Garden",
+      "reason": "High confidence duplicate of \"Las Vegas Beer Garden\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Triangle Bar",
+      "reason": "High confidence duplicate of \"Triangle Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Havana Bar Pattaya",
+      "reason": "High confidence duplicate of \"Havana Bar Pattaya\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Wizard Brewery & Bar",
+      "reason": "High confidence duplicate of \"Wizard Brewery & Bar\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Lucifer Music Café (Bar)",
+      "reason": "High confidence duplicate of \"Lucifer Music Café (Bar)\" (score 1.000)",
+      "score": 1
+    },
+    {
+      "name": "Sky Music Beach Entry Bar",
+      "reason": "Weak signals matching \"Sky Music Live Bar\" (score 0.402) — review recommended",
+      "score": 0.4022222222222222
+    }
+  ]
+}

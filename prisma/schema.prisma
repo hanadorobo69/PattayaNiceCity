@@ -1,0 +1,908 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Profile {
+  id          String   @id @default(cuid())
+  username    String   @unique
+  email       String   @unique
+  password    String
+  displayName String?
+  bio         String?
+  avatarUrl   String?
+  isVerified  Boolean  @default(false)
+  isAdmin     Boolean  @default(false)
+  googleId    String?  @unique
+  discordId   String?  @unique
+  facebookId  String?  @unique
+  appleId     String?  @unique
+  redditId    String?  @unique
+  karma       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  dateOfBirth         DateTime?
+  country             String?
+  nationality         String?
+  residentType        String?  // "resident" | "tourist" | null
+  isVenueAccount      Boolean  @default(false)
+  preferredLanguage   String   @default("en")
+
+  posts               Post[]
+  comments            Comment[]
+  votes               Vote[]
+  commentVotes        CommentVote[]
+  favorites           Favorite[]
+  ratings             Rating[]
+  venueRatings        VenueRating[]
+  events              Event[]
+  eventInterests      EventInterest[]
+  verificationRequest VerificationRequest?
+  ownedVenue          Venue?   @relation("VenueOwner")
+  girlComments        GirlComment[]
+  girlCommentVotes    GirlCommentVote[]
+  venueComments       VenueComment[]
+  venueCommentVotes   VenueCommentVote[]
+  girlRatings         GirlRating[]
+  contentReports      ContentReport[]
+  venueFavorites      VenueFavorite[]
+  vlogs               Vlog[]           @relation("VlogAuthor")
+  conversations       ConversationParticipant[]
+  sentMessages        Message[]        @relation("MessageSender")
+  notificationsReceived Notification[] @relation("NotificationsReceived")
+  notificationsSent     Notification[] @relation("NotificationsSent")
+
+  @@index([username])
+  @@index([email])
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  color       String   @default("#F97316")
+  icon        String?
+  sortOrder   Int      @default(99)
+  isAdminOnly Boolean  @default(false)
+  isPostOnly  Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  posts          Post[]
+  venues         Venue[]
+  postCategories PostCategory[]
+
+  @@index([slug])
+}
+
+model Venue {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?
+  address     String?
+  district    String?
+  city        String   @default("Pattaya")
+  phone       String?
+  phoneType   String?  // "whatsapp" | "line" | "phone"
+  whatsapp    String?
+  lineId      String?
+  lineQrUrl   String?
+  website     String?
+  facebook    String?
+  instagram   String?
+  hours       String?
+  lat         Float?
+  lng         Float?
+  imageUrl    String?
+  isVerified        Boolean  @default(false)
+  isActive          Boolean  @default(true)
+  permanentlyClosed Boolean  @default(false)
+  isRecommended     Boolean  @default(false) // "Fire Spot" -- team's pick
+  needsVerification Boolean  @default(false) // flagged by admin to verify on-site
+  priceRange  String?  // "$", "$$", "$$$"
+
+  // Pricing details — Drinks
+  priceSoftDrink   Int?     // soft drink price (THB)
+  priceBeerMin     Int?     // beer min (THB)
+  priceBeerMax     Int?     // beer max
+  priceAlcoholMin  Int?     // alcohol min
+  priceAlcoholMax  Int?     // alcohol max
+  priceLadyDrink   Int?     // fixed lady drink price
+  priceBottleMin   Int?     // bottle service min
+  priceBottleMax   Int?     // bottle service max
+  // Pricing details — Barfine / ST / LT (min–max ranges)
+  priceBarfineMin  Int?     // barfine min price
+  priceBarfineMax  Int?     // barfine max price
+  priceShortTimeMin Int?    // short time min (girl fee)
+  priceShortTimeMax Int?    // short time max
+  priceLongTimeMin Int?     // long time min (overnight)
+  priceLongTimeMax Int?     // long time max
+  // Pricing details — Services
+  priceRoomSmall   Int?     // short-time room small
+  priceRoomLarge   Int?     // short-time room large/suite
+  priceBJ          Int?     // blowjob price
+  priceBoomBoom    Int?     // full service price
+  // Pricing details — Tables
+  priceTableSmall  Int?     // small table (clubs)
+  priceTableMedium Int?     // medium table (clubs)
+  priceTableLarge  Int?     // large/VIP table (clubs)
+  // Pricing details — Massage
+  priceThaiMassage Int?     // thai massage price
+  priceFootMassage Int?     // foot massage price
+  priceOilMassage  Int?     // oil massage price
+
+  // Pricing details — Cannabis Coffee Shop (min–max ranges)
+  priceCoffeeMin   Int?     // cannabis per gram min (THB)
+  priceCoffeeMax   Int?     // cannabis per gram max
+  priceFoodMin     Int?     // joint / pre-roll min (THB)
+  priceFoodMax     Int?     // joint / pre-roll max
+
+  // Hotel specific
+  hotelStars       Int?     // 1-5 star rating
+
+  // Amenities
+  hasPool          Boolean  @default(false)
+  poolCount        Int?
+  hasDarts         Boolean  @default(false)
+  dartsCount       Int?
+  hasConnect4      Boolean  @default(false)
+  connect4Count    Int?
+  hasCardGames     Boolean  @default(false)
+  hasJenga         Boolean  @default(false)
+  hasBeerPong      Boolean  @default(false)
+  hasConsoles      Boolean  @default(false)
+  hasBoardGames    Boolean  @default(false)
+  hasWifi          Boolean  @default(false)
+  hasTV            Boolean  @default(false)
+// NiceCity flags  isKidFriendly        Boolean  @default(false)  isWheelchairFriendly Boolean  @default(false)  isRainyDayFriendly   Boolean  @default(false)  hasParking           Boolean  @default(false)  goodForDigitalNomad  Boolean  @default(false)  petFriendly          Boolean  @default(false)  goodForFamilies      Boolean  @default(false)  priceEntry           Int?     // entry fee (attractions, parks)  priceDropIn          Int?     // drop-in fee (gym, muay thai)
+
+  // Freelance area fields
+  geometryType     String?  // "circle" | "polyline" | "polygon"
+  geometryPath     String?  @db.Text // JSON: [[lat,lng],...] for polyline/polygon
+  areaRadius       Int?     // zone radius in meters (for circle)
+  widthHintMeters  Int?     // visual corridor width for polylines
+  zoneType         String?  // "street-strip" | "corner-spot" | "zone"
+  bestHours        String?  // e.g. "22:00–02:00"
+  typicalBudgetMin Int?     // typical budget min (THB)
+  typicalBudgetMax Int?     // typical budget max (THB)
+  crowdStyle       String?  // crowd description
+  safetyNote       String?  // safety/scam notes
+  nearbyHotels     String?  // JSON array of nearby hotel names
+  lastVerifiedAt   DateTime? // when the zone info was last verified
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  categoryId     String
+  category       Category @relation(fields: [categoryId], references: [id])
+  ownerProfileId String?  @unique
+  ownerProfile   Profile? @relation("VenueOwner", fields: [ownerProfileId], references: [id], onDelete: SetNull)
+
+  posts         Post[]
+  venueRatings  VenueRating[]
+  venueComments VenueComment[]
+  media         VenueMedia[]
+  menuMedia     VenueMenuMedia[]
+  events        Event[]
+  girls          Girl[]
+  views          VenueView[]
+  venueFavorites VenueFavorite[]
+
+  @@index([slug])
+  @@index([categoryId])
+  @@index([isActive, categoryId])
+  @@index([isActive, createdAt])
+}
+
+model Vlog {
+  id              String    @id @default(cuid())
+  title           String
+  slug            String    @unique
+  excerpt         String    @default("") // Short summary for cards & meta (150-300 chars)
+  content         String    @default("") // Main long-form article body (markdown, @mentions, #hashtags)
+  description     String    // Legacy: kept for backwards compat, use content for new articles
+  metaTitle       String?   // SEO title override (auto-generated if null)
+  metaDescription String?   // SEO description override (auto-generated from excerpt if null)
+  focusKeyword    String?   // Primary SEO keyword for this article
+  coverImageUrl   String?   // Hero/cover image URL
+  coverImageAlt   String?   // Alt text for cover image (SEO + accessibility)
+  coverImageCaption String? // Caption for cover image (EEAT: "Photo taken at Walking Street, March 2026")
+  youtubeUrl      String    @default("") // YouTube video URL (optional embed)
+  thumbnailUrl    String?   // Custom thumbnail (fallback to cover or YouTube)
+  articleType     String    @default("article") // "article" | "guide" | "howto" | "review" | "listicle"
+  isPublished     Boolean   @default(false)
+  publishedAt     DateTime? // Explicit publish date (for display & schema)
+  lastModifiedAt  DateTime? // Manual "last meaningfully modified" date (distinct from auto-updatedAt)
+  readingTime     Int       @default(0) // Estimated reading time in minutes
+  viewCount       Int       @default(0)
+  faqs            Json?     // Array of {question, answer} for FAQ schema
+  sources         Json?     // Array of {title, url?, date?} for EEAT citations
+  fieldNotes      String?   // Terrain notes: "Visited Walking Street on March 15, 2026..."
+  canonicalSlug    String?   // If this article should canonical to another slug
+  lastVerifiedAt   DateTime? // Date author last physically verified content on-site
+  terrainProof     Json?     // Array of {type:"photo"|"receipt"|"gps", url, caption, date, location}
+  translations     Json?     // Per-locale overrides: { "fr": {title, excerpt, content, metaDescription}, ... }
+  readabilityScore Float?    // Flesch-Kincaid readability score (computed on save)
+  keywordDensity   Json?     // {keyword, density, count, totalWords}
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  authorId       String
+  author         Profile       @relation("VlogAuthor", fields: [authorId], references: [id])
+  blogCategoryId String?
+  blogCategory   BlogCategory? @relation(fields: [blogCategoryId], references: [id])
+
+  media BlogMedia[]
+  tags  BlogTag[]  @relation("VlogTags")
+
+  @@index([slug])
+  @@index([isPublished, publishedAt])
+  @@index([isPublished, createdAt])
+  @@index([blogCategoryId])
+}
+
+model BlogMedia {
+  id      String @id @default(cuid())
+  url     String
+  alt     String @default("")
+  caption String @default("")
+  order   Int    @default(0)
+  vlogId  String
+  vlog    Vlog   @relation(fields: [vlogId], references: [id], onDelete: Cascade)
+
+  @@index([vlogId])
+}
+
+model BlogTag {
+  id          String  @id @default(cuid())
+  name        String  @unique
+  slug        String  @unique
+  description String? // SEO description for tag context
+  vlogs       Vlog[]  @relation("VlogTags")
+
+  @@index([slug])
+}
+
+model BlogCategory {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?  // SEO description for category archive context
+  color       String   @default("#8a2be2")
+  order       Int      @default(99)
+  createdAt   DateTime @default(now())
+
+  vlogs Vlog[]
+
+  @@index([slug])
+}
+
+model SlugRedirect {
+  id        String   @id @default(cuid())
+  oldSlug   String   @unique
+  newSlug   String
+  createdAt DateTime @default(now())
+
+  @@index([oldSlug])
+  @@index([newSlug])
+}
+
+model Girl {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique  // used for @mentions
+  nickname    String?
+  nationality String?
+  description String?
+  imageUrl    String?
+  isVerified  Boolean  @default(false)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Physical attributes
+  age         Int?
+  height      Int?      // in cm
+  weight      Int?      // in kg
+  eyeColor    String?
+  hairColor   String?
+  bustSize    String?   // "small" | "medium" | "large" | "xl"
+  bodyType    String?   // "slim" | "athletic" | "curvy" | "average"
+  ethnicity   String?   // "Thai" | "Filipino" | "Chinese" | "Mixed" etc
+
+  // Services
+  services    String    @default("[]")  // JSON array of service slugs
+  languages   String    @default("[]")  // JSON array e.g. ["thai","english"]
+  availability String?  // "incall" | "outcall" | "both"
+  workingHours String?  // e.g. "18:00-02:00"
+  priceRange  String?   // "$" | "$$" | "$$$" | "$$$$"
+  phone       String?
+  lineId      String?
+
+  // Media
+  photos      String    @default("[]")  // JSON array of URLs
+  videos      String    @default("[]")  // JSON array of URLs
+
+  // Category
+  girlType    String    @default("girl") // "girl" | "ladyboy" | "gay"
+
+  venueId     String?
+  venue       Venue?   @relation(fields: [venueId], references: [id], onDelete: SetNull)
+
+  comments    GirlComment[]
+  girlRatings GirlRating[]
+
+  @@index([slug])
+  @@index([venueId])
+  @@index([girlType])
+}
+
+model GirlRating {
+  id        String   @id @default(cuid())
+  overall   Float
+  scores    String   @default("{}")  // JSON: { looks, service, attitude, value }
+  comment   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  authorId String
+  author   Profile @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  girlId   String
+  girl     Girl    @relation(fields: [girlId], references: [id], onDelete: Cascade)
+
+  @@unique([authorId, girlId])
+  @@index([girlId])
+  @@index([authorId])
+}
+
+model Post {
+  id             String    @id @default(cuid())
+  title          String
+  slug           String    @unique
+  content        String
+  imageUrl       String?
+  score          Int       @default(0)
+  isPinned       Boolean   @default(false)
+  sourceLanguage String    @default("en")
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  deletedAt      DateTime?
+
+  authorId   String
+  author     Profile  @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id])
+  venueId    String?
+  venue      Venue?   @relation(fields: [venueId], references: [id])
+
+  comments       Comment[]
+  votes          Vote[]
+  favorites      Favorite[]
+  ratings        Rating[]
+  images         PostImage[]
+  media          PostMedia[]
+  postCategories PostCategory[]
+  poll           Poll?
+  notifications  Notification[]
+
+  @@index([slug])
+  @@index([authorId])
+  @@index([categoryId])
+  @@index([score])
+  @@index([createdAt])
+  @@index([venueId])
+  @@index([deletedAt])
+}
+
+model PostImage {
+  id        String   @id @default(cuid())
+  url       String
+  alt       String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  postId String
+  post   Post   @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@index([postId])
+}
+
+model PostMedia {
+  id        String   @id @default(cuid())
+  url       String
+  type      String   @default("IMAGE") // IMAGE | VIDEO | PDF
+  filename  String?
+  size      Int?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  postId String
+  post   Post   @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@index([postId])
+}
+
+model PostCategory {
+  postId     String
+  categoryId String
+  post       Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  @@id([postId, categoryId])
+  @@index([postId])
+  @@index([categoryId])
+}
+
+model CommentMedia {
+  id        String   @id @default(cuid())
+  url       String
+  type      String   @default("IMAGE") // IMAGE | VIDEO | PDF
+  filename  String?
+  size      Int?
+  createdAt DateTime @default(now())
+
+  commentId String
+  comment   Comment @relation(fields: [commentId], references: [id], onDelete: Cascade)
+
+  @@index([commentId])
+}
+
+model VenueMedia {
+  id        String   @id @default(cuid())
+  url       String
+  type      String   @default("IMAGE") // IMAGE | VIDEO
+  caption   String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  venueId String
+  venue   Venue  @relation(fields: [venueId], references: [id], onDelete: Cascade)
+
+  @@index([venueId])
+}
+
+model VenueMenuMedia {
+  id        String   @id @default(cuid())
+  url       String
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  venueId String
+  venue   Venue  @relation(fields: [venueId], references: [id], onDelete: Cascade)
+
+  @@index([venueId])
+}
+
+model Comment {
+  id             String    @id @default(cuid())
+  content        String
+  score          Int       @default(0)
+  sourceLanguage String    @default("en")
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  deletedAt      DateTime?
+
+  authorId String
+  author   Profile   @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  postId   String
+  post     Post      @relation(fields: [postId], references: [id], onDelete: Cascade)
+  parentId String?
+  parent   Comment?  @relation("CommentReplies", fields: [parentId], references: [id])
+  replies  Comment[] @relation("CommentReplies")
+  votes    CommentVote[]
+  media    CommentMedia[]
+  notifications Notification[]
+
+  @@index([postId])
+  @@index([authorId])
+  @@index([parentId])
+  @@index([deletedAt])
+}
+
+model CommentVote {
+  id        String   @id @default(cuid())
+  value     Int
+  createdAt DateTime @default(now())
+
+  userId    String
+  user      Profile @relation(fields: [userId], references: [id], onDelete: Cascade)
+  commentId String
+  comment   Comment @relation(fields: [commentId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, commentId])
+  @@index([commentId])
+}
+
+model Vote {
+  id        String   @id @default(cuid())
+  value     Int
+  createdAt DateTime @default(now())
+
+  userId String
+  user   Profile @relation(fields: [userId], references: [id], onDelete: Cascade)
+  postId String
+  post   Post    @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, postId])
+  @@index([postId])
+}
+
+model Favorite {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  userId String
+  user   Profile @relation(fields: [userId], references: [id], onDelete: Cascade)
+  postId String
+  post   Post    @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, postId])
+  @@index([userId])
+}
+
+model Rating {
+  id        String   @id @default(cuid())
+  overall   Int
+  scores    String   @default("{}")
+  comment   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  authorId String
+  author   Profile @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  postId   String
+  post     Post    @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@unique([authorId, postId])
+  @@index([postId])
+  @@index([authorId])
+}
+
+model VerificationRequest {
+  id           String   @id @default(cuid())
+  businessName String
+  businessType String
+  contactEmail String?
+  message      String?
+  status       String   @default("pending")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  profileId String  @unique
+  profile   Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+}
+
+model VenueRating {
+  id        String   @id @default(cuid())
+  overall   Float
+  scores    String   @default("{}")
+  comment   String?
+  createdAt DateTime @default(now())
+
+  authorId String
+  author   Profile @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  venueId  String
+  venue    Venue   @relation(fields: [venueId], references: [id], onDelete: Cascade)
+
+  @@unique([authorId, venueId])
+  @@index([venueId])
+  @@index([authorId])
+}
+
+model Event {
+  id             String    @id @default(cuid())
+  title          String
+  description    String?
+  imageUrl       String?
+  startDate      DateTime
+  endDate        DateTime?
+  isApproved     Boolean   @default(false)
+  isFeatured     Boolean   @default(false)
+  sourceLanguage String    @default("en")
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  venueId  String?
+  venue    Venue?   @relation(fields: [venueId], references: [id], onDelete: SetNull)
+  authorId String
+  author   Profile  @relation(fields: [authorId], references: [id], onDelete: Cascade)
+
+  interests EventInterest[]
+
+  @@index([startDate])
+  @@index([venueId])
+  @@index([authorId])
+}
+
+model EventInterest {
+  id        String   @id @default(cuid())
+  status    String   // "GOING" | "INTERESTED" | "SAVED"
+  createdAt DateTime @default(now())
+
+  userId  String
+  user    Profile @relation(fields: [userId], references: [id], onDelete: Cascade)
+  eventId String
+  event   Event   @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, eventId])
+  @@index([eventId])
+  @@index([userId])
+}
+
+model VenueComment {
+  id             String    @id @default(cuid())
+  content        String
+  score          Int       @default(0)
+  sourceLanguage String    @default("en")
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  deletedAt      DateTime?
+
+  authorId String
+  author   Profile        @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  venueId  String
+  venue    Venue          @relation(fields: [venueId], references: [id], onDelete: Cascade)
+  parentId String?
+  parent   VenueComment?  @relation("VenueCommentReplies", fields: [parentId], references: [id])
+  replies  VenueComment[] @relation("VenueCommentReplies")
+  votes    VenueCommentVote[]
+
+  @@index([venueId])
+  @@index([authorId])
+  @@index([parentId])
+  @@index([deletedAt])
+}
+
+model VenueCommentVote {
+  id        String   @id @default(cuid())
+  value     Int
+  createdAt DateTime @default(now())
+
+  userId    String
+  user      Profile       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  commentId String
+  comment   VenueComment  @relation(fields: [commentId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, commentId])
+  @@index([commentId])
+}
+
+model GirlComment {
+  id             String   @id @default(cuid())
+  content        String
+  score          Int      @default(0)
+  sourceLanguage String   @default("en")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  authorId String
+  author   Profile       @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  girlId   String
+  girl     Girl          @relation(fields: [girlId], references: [id], onDelete: Cascade)
+  parentId String?
+  parent   GirlComment?  @relation("GirlCommentReplies", fields: [parentId], references: [id])
+  replies  GirlComment[] @relation("GirlCommentReplies")
+  votes    GirlCommentVote[]
+
+  @@index([girlId])
+  @@index([authorId])
+  @@index([parentId])
+}
+
+model GirlCommentVote {
+  id        String   @id @default(cuid())
+  value     Int
+  createdAt DateTime @default(now())
+
+  userId    String
+  user      Profile      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  commentId String
+  comment   GirlComment  @relation(fields: [commentId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, commentId])
+  @@index([commentId])
+}
+
+model PageView {
+  id        String   @id @default(cuid())
+  path      String
+  userId    String?
+  userAgent String?
+  country   String?
+  city      String?
+  region    String?
+  ip        String?
+  referrer  String?
+  createdAt DateTime @default(now())
+
+  @@index([path])
+  @@index([createdAt])
+  @@index([userId])
+  @@index([ip])
+}
+
+model VenueView {
+  id        String   @id @default(cuid())
+  venueId   String
+  userId    String?
+  venue     Venue    @relation(fields: [venueId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@index([venueId])
+  @@index([createdAt])
+  @@index([venueId, createdAt])
+  @@index([userId])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String
+  createdAt DateTime @default(now())
+  read      Boolean  @default(false)
+}
+
+model Translation {
+  id             String   @id @default(cuid())
+  entityType     String   // "post" | "comment" | "venue_comment" | "girl_comment" | "event" | "venue" | "girl"
+  entityId       String
+  field          String   // "title" | "content" | "description"
+  sourceLanguage String
+  contentHash    String   // MD5 of source text for invalidation
+  targetLanguage String
+  translatedText String
+  provider       String   @default("google")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([entityType, entityId, field, targetLanguage])
+  @@index([entityType, entityId])
+  @@index([contentHash])
+}
+
+model Poll {
+  id        String   @id @default(cuid())
+  question  String
+  createdAt DateTime @default(now())
+  endsAt    DateTime?
+
+  postId  String   @unique
+  post    Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  options PollOption[]
+
+  @@index([postId])
+}
+
+model PollOption {
+  id    String @id @default(cuid())
+  text  String
+  order Int    @default(0)
+
+  pollId String
+  poll   Poll       @relation(fields: [pollId], references: [id], onDelete: Cascade)
+  votes  PollVote[]
+
+  @@index([pollId])
+}
+
+model PollVote {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  userId   String
+  optionId String
+  option   PollOption @relation(fields: [optionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, optionId])
+  @@index([optionId])
+  @@index([userId])
+}
+
+model VenueFavorite {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  userId  String
+  user    Profile @relation(fields: [userId], references: [id], onDelete: Cascade)
+  venueId String
+  venue   Venue   @relation(fields: [venueId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, venueId])
+  @@index([userId])
+  @@index([venueId])
+}
+
+model ContentReport {
+  id          String   @id @default(cuid())
+  reporterId  String
+  contentType String
+  contentId   String
+  reason      String
+  details     String?
+  status      String   @default("pending")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  reporter Profile @relation(fields: [reporterId], references: [id])
+
+  @@index([contentType, contentId])
+  @@index([status])
+}
+
+// ─── DIRECT MESSAGES ───
+
+model Conversation {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  participants ConversationParticipant[]
+  messages     Message[]
+
+  @@index([updatedAt])
+}
+
+model ConversationParticipant {
+  id             String       @id @default(cuid())
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  profileId      String
+  profile        Profile      @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  lastReadAt     DateTime     @default(now())
+  createdAt      DateTime     @default(now())
+
+  @@unique([conversationId, profileId])
+  @@index([profileId])
+  @@index([conversationId])
+}
+
+model Message {
+  id             String       @id @default(cuid())
+  content        String
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  senderId       String
+  sender         Profile      @relation("MessageSender", fields: [senderId], references: [id], onDelete: Cascade)
+  createdAt      DateTime     @default(now())
+
+  @@index([conversationId, createdAt])
+  @@index([senderId])
+}
+
+model PasswordResetToken {
+  id        String   @id @default(cuid())
+  email     String
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([email])
+  @@index([token])
+}
+
+model Notification {
+  id          String   @id @default(cuid())
+  type        String   // "mention_post" | "mention_comment" | "reply"
+  read        Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  recipientId String
+  recipient   Profile  @relation("NotificationsReceived", fields: [recipientId], references: [id], onDelete: Cascade)
+  actorId     String
+  actor       Profile  @relation("NotificationsSent", fields: [actorId], references: [id], onDelete: Cascade)
+  postId      String?
+  post        Post?    @relation(fields: [postId], references: [id], onDelete: Cascade)
+  commentId   String?
+  comment     Comment? @relation(fields: [commentId], references: [id], onDelete: Cascade)
+
+  @@index([recipientId, read, createdAt])
+  @@index([actorId])
+}

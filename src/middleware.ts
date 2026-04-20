@@ -25,17 +25,35 @@ function stripLocale(pathname: string): string {
   return pathname
 }
 
+// Paths that bypass the coming-soon gate (auth flow must work)
+const PUBLIC_PATHS = ["/coming-soon", "/login", "/register", "/api/auth"]
+
+function isPublicPath(pathname: string): boolean {
+  return PUBLIC_PATHS.some((p) => pathname === p || pathname.startsWith(p + "/"))
+}
+
 export default async function middleware(req: NextRequest) {
   const realPath = stripLocale(req.nextUrl.pathname)
-  const isProtected = needsAuth(realPath)
 
-  if (isProtected) {
-    const session = await auth()
-    if (!session?.user) {
-      const loginUrl = new URL("/login", req.url)
-      loginUrl.searchParams.set("callbackUrl", req.url)
-      return NextResponse.redirect(loginUrl)
-    }
+  // Always allow public paths (coming-soon, auth flow)
+  if (isPublicPath(realPath)) {
+    return intlMiddleware(req)
+  }
+
+  // --- Coming Soon Gate: only admins can access the site ---
+  const session = await auth()
+
+  if (!session?.user?.isAdmin) {
+    // Not logged in or not admin - redirect to coming-soon
+    const comingSoonUrl = new URL("/coming-soon", req.url)
+    return NextResponse.redirect(comingSoonUrl)
+  }
+
+  // Admin user - allow normal flow
+  if (needsAuth(realPath) && !session?.user) {
+    const loginUrl = new URL("/login", req.url)
+    loginUrl.searchParams.set("callbackUrl", req.url)
+    return NextResponse.redirect(loginUrl)
   }
 
   return intlMiddleware(req)

@@ -14,6 +14,7 @@ declare module "next-auth" {
       email?: string | null
       name?: string | null
       image?: string | null
+      isAdmin?: boolean
     }
   }
 }
@@ -130,12 +131,18 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         if (provider && provider !== "credentials" && user.email) {
           const profile = await prisma.profile.findUnique({
             where: { email: user.email },
-            select: { id: true },
+            select: { id: true, isAdmin: true },
           })
           token.profileId = profile?.id
+          token.isAdmin = profile?.isAdmin ?? false
         } else {
           // Credentials: user.id is already the profile.id
           token.profileId = user.id
+          const profile = await prisma.profile.findUnique({
+            where: { id: user.id },
+            select: { isAdmin: true },
+          })
+          token.isAdmin = profile?.isAdmin ?? false
         }
       }
       return token
@@ -145,6 +152,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       if (token.profileId) {
         session.user.id = token.profileId as string
       }
+      session.user.isAdmin = token.isAdmin as boolean ?? false
       return session
     },
   },

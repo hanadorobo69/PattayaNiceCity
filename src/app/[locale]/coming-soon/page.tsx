@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Coming Soon - Pattaya Nice City",
@@ -30,12 +29,6 @@ export default function ComingSoonPage() {
           <p className="text-[11px] text-muted-foreground mt-1">Activities</p>
         </div>
       </div>
-      <Link
-        href="/login"
-        className="text-xs text-muted-foreground/30 hover:text-muted-foreground/50 transition-colors mt-4"
-      >
-        Admin access
-      </Link>
     </div>
   )
 }

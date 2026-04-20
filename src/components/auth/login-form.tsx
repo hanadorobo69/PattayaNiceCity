@@ -31,17 +31,11 @@ export function LoginForm() {
   function onSubmit(data: LoginInput) {
     setError(null);
     startTransition(async () => {
-      try {
-        const formData = new FormData();
-        formData.append("email", data.email);
-        formData.append("password", data.password);
-        const result = await signIn(formData);
-        if (result && !result.success) setError(result.error);
-      } catch (err) {
-        // Auth.js redirect on success - let Next.js handle navigation
-        if ((err as { digest?: string })?.digest?.startsWith("NEXT_REDIRECT")) throw err;
-        setError("Invalid email or password");
-      }
+      const formData = new FormData();
+      formData.append("email", data.email);
+      formData.append("password", data.password);
+      const result = await signIn(formData);
+      if (result && !result.success) setError(result.error);
     });
   }
 

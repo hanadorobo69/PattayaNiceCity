@@ -34,21 +34,12 @@ export async function signIn(formData: FormData): Promise<ActionResult<void>> {
       password: parsed.data.password,
       redirectTo: "/",
     });
-  } catch (error: unknown) {
-    const err = error as { digest?: string; type?: string; message?: string; name?: string };
-    console.error("[LOGIN DEBUG]", {
-      name: err?.name,
-      type: err?.type,
-      message: err?.message,
-      digest: err?.digest,
-      isAuthError: error instanceof AuthError,
-    });
+  } catch (error) {
     if (error instanceof AuthError) {
       return { success: false, error: "Invalid email or password" };
     }
-    // Auth.js throws a NEXT_REDIRECT on successful login - let it propagate
-    if (err?.digest?.startsWith("NEXT_REDIRECT")) throw error;
-    return { success: false, error: "Invalid email or password" };
+    // Auth.js throws NEXT_REDIRECT on success - must re-throw for navigation
+    throw error;
   }
 }
 

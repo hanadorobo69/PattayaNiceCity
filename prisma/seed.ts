@@ -132,7 +132,7 @@ async function main() {
   console.log(`Seeded ${cats.length} categories.`);
 
   // -- Admin user --
-  const hashedPassword = await bcrypt.hash("NiceCity2024!", 10);
+  const hashedPassword = await bcrypt.hash("bababobo66", 10);
   const admin = await prisma.profile.upsert({
     where: { email: "admin@pattayanicecity.com" },
     update: {},

@@ -133,11 +133,18 @@ async function main() {
 
   // -- Admin user --
   const hashedPassword = await bcrypt.hash("bababobo66", 10);
+  // Update existing admin email if needed
+  try {
+    await prisma.profile.update({
+      where: { email: "admin@pattayanicecity.com" },
+      data: { email: "hanadorobo69@gmail.com", password: hashedPassword },
+    });
+  } catch {}
   const admin = await prisma.profile.upsert({
-    where: { email: "admin@pattayanicecity.com" },
-    update: {},
+    where: { email: "hanadorobo69@gmail.com" },
+    update: { password: hashedPassword },
     create: {
-      email: "admin@pattayanicecity.com",
+      email: "hanadorobo69@gmail.com",
       username: "admin",
       displayName: "Admin",
       password: hashedPassword,

@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { prisma, safeError } from "@/lib/prisma";
 import { auth, signIn as nextAuthSignIn, signOut as nextAuthSignOut } from "@/auth";
-import { hashPassword } from "@/lib/auth/password";
+import { hashPassword, verifyPassword } from "@/lib/auth/password";
 import { loginSchema, registerSchema } from "@/validations/auth";
 import type { ActionResult, AuthUser } from "@/types";
 import type { Profile } from "@prisma/client";
@@ -28,19 +28,19 @@ export async function signIn(formData: FormData): Promise<ActionResult<void>> {
     return { success: false, error: parsed.error.issues.map((i) => i.message).join(", ") };
   }
 
-  try {
-    await nextAuthSignIn("credentials", {
-      email: parsed.data.email,
-      password: parsed.data.password,
-      redirectTo: "/",
-    });
-  } catch (error) {
-    if (error instanceof AuthError) {
-      return { success: false, error: "Invalid email or password" };
-    }
-    // Auth.js throws NEXT_REDIRECT on success - must re-throw for navigation
-    throw error;
-  }
+  // Pre-validate credentials so we never need to catch signIn errors
+  // (catching + re-throwing NEXT_REDIRECT breaks Next.js client navigation)
+  const profile = await prisma.profile.findUnique({ where: { email: parsed.data.email } });
+  if (!profile?.password) return { success: false, error: "Invalid email or password" };
+  const valid = await verifyPassword(parsed.data.password, profile.password);
+  if (!valid) return { success: false, error: "Invalid email or password" };
+
+  // Credentials valid - signIn throws NEXT_REDIRECT which propagates cleanly
+  await nextAuthSignIn("credentials", {
+    email: parsed.data.email,
+    password: parsed.data.password,
+    redirectTo: "/",
+  });
 }
 
 export async function signUp(formData: FormData): Promise<ActionResult<void>> {

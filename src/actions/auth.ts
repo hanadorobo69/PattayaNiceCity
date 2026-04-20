@@ -32,19 +32,16 @@ export async function signIn(formData: FormData): Promise<ActionResult<void>> {
     await nextAuthSignIn("credentials", {
       email: parsed.data.email,
       password: parsed.data.password,
-      redirect: false,
+      redirectTo: "/",
     });
   } catch (error) {
     if (error instanceof AuthError) {
       return { success: false, error: "Invalid email or password" };
     }
-    // NextAuth throws a redirect internally on success in some versions
+    // Auth.js throws a NEXT_REDIRECT on successful login - let it propagate
     if ((error as { digest?: string })?.digest?.startsWith("NEXT_REDIRECT")) throw error;
     return { success: false, error: "Invalid email or password" };
   }
-
-  revalidatePath("/", "layout");
-  redirect("/");
 }
 
 export async function signUp(formData: FormData): Promise<ActionResult<void>> {
